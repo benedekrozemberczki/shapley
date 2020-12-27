@@ -106,4 +106,4 @@ $ python permutation_example.py
 
 **License**
 
-- [MIT License](https://github.com/benedekrozemberczki/karateclub/blob/master/LICENSE)
+- [MIT License](https://github.com/benedekrozemberczki/shapley/blob/master/LICENSE)
