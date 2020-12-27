@@ -32,7 +32,7 @@
 **Citing**
 
 
-If you find *PyTorch Geometric Temporal* and the new datasets useful in your research, please consider adding the following citation:
+If you find *Shapley* please consider adding the following citation:
 
 ```bibtex
 @misc{pytorch_geometric_temporal,
