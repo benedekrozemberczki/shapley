@@ -1,13 +1,13 @@
-[pypi-image]: https://badge.fury.io/py/torch-geometric-temporal.svg
-[pypi-url]: https://pypi.python.org/pypi/torch-geometric-temporal
-[size-image]: https://img.shields.io/github/repo-size/benedekrozemberczki/pytorch_geometric_temporal.svg
-[size-url]: https://github.com/benedekrozemberczki/pytorch_geometric_temporal/archive/master.zip
-[build-image]: https://github.com/benedekrozemberczki/pytorch_geometric_temporal/workflows/CI/badge.svg
-[build-url]: https://github.com/benedekrozemberczki/pytorch_geometric_temporal/actions?query=workflow%3ACI
-[docs-image]: https://readthedocs.org/projects/pytorch-geometric-temporal/badge/?version=latest
-[docs-url]: https://pytorch-geometric-temporal.readthedocs.io/en/latest/?badge=latest
-[coverage-image]: https://codecov.io/gh/benedekrozemberczki/pytorch_geometric_temporal/branch/master/graph/badge.svg
-[coverage-url]: https://codecov.io/github/benedekrozemberczki/pytorch_geometric_temporal?branch=master
+[pypi-image]: https://badge.fury.io/py/shapley.svg
+[pypi-url]: https://pypi.python.org/pypi/shapley
+[size-image]: https://img.shields.io/github/repo-size/benedekrozemberczki/shapley.svg
+[size-url]: https://github.com/benedekrozemberczki/shapley/archive/master.zip
+[build-image]: https://github.com/benedekrozemberczki/shapley/workflows/CI/badge.svg
+[build-url]: https://github.com/benedekrozemberczki/shapley/actions?query=workflow%3ACI
+[docs-image]: https://readthedocs.org/projects/shapley/badge/?version=latest
+[docs-url]: https://shapley.readthedocs.io/en/latest/?badge=latest
+[coverage-image]: https://codecov.io/gh/benedekrozemberczki/shapley/branch/master/graph/badge.svg
+[coverage-url]: https://codecov.io/github/benedekrozemberczki/shapley?branch=master
 
 <p align="center">
   <img width="90%" src="https://github.com/benedekrozemberczki/shapley/raw/master/shapley.jpg?sanitize=true" />
