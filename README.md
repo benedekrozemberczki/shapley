@@ -21,7 +21,7 @@
 [![Code Coverage][coverage-image]][coverage-url]
 [![Build Status][build-image]][build-url]
 
-**[Documentation](https://shapley.readthedocs.io)** | **[External Resources](https://shapley.readthedocs.io/en/latest/notes/resources.html)** | **[Datasets](https://p.readthedocs.io/en/latest/notes/introduction.html#discrete-time-datasets)**
+**[Documentation](https://shapley.readthedocs.io)** | **[External Resources](https://shapley.readthedocs.io/en/latest/notes/resources.html)**
 
 *PyTorch Geometric Temporal* is a temporal (dynamic) extension library.
 
