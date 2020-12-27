@@ -23,9 +23,9 @@
 
 **[Documentation](https://shapley.readthedocs.io)** | **[External Resources](https://shapley.readthedocs.io/en/latest/notes/resources.html)**
 
-*Shapley* is a general Python library for evaluating binary classifiers in a machine learning ensemble.
+*Shapley* is a Python library for evaluating binary classifiers in a machine learning ensemble.
 
-<p align="justify">The library consists of various dynamic and temporal geometric deep learning, embedding, and spatio-temporal regression methods from a variety of published research papers. In addition, it consists of an easy-to-use dataset loader and iterator for dynamic and temporal graphs, gpu-support. It also comes with a number of benchmark datasets with temporal and dynamic graphs (you can also create your own datasets).</p>
+<p align="justify">The library consists of various methods to compute (approximate) the Shapley value of players in weighted voting games. We covered widely know approximation methods from well knwon research papers. There are also functionalities to identify the heterogeneity of the player pool. In addition, it comes with a detailed documentation, 100% test coverage and illsutrative examples..</p>
 
 --------------------------------------------------------------------------------
 
