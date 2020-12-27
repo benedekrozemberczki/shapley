@@ -63,13 +63,13 @@ from shapley import MonteCarloPermutations
 In detail, the following methods can be used.
 
 
-* **[Expected Marginal Contribution Approximation](https://pytorch-geometric-temporal.readthedocs.io/en/latest/modules/root.html#torch_geometric_temporal.nn.recurrent.dcrnn.DCRNN)** from Fatima *et al.*: [A Linear Approximation Method for the Shapley Value](https://www.sciencedirect.com/science/article/pii/S0004370208000696)
+* **[Expected Marginal Contribution Approximation]()** from Fatima *et al.*: [A Linear Approximation Method for the Shapley Value](https://www.sciencedirect.com/science/article/pii/S0004370208000696)
 
-* **[Multilinear Extension](https://pytorch-geometric-temporal.readthedocs.io/en/latest/modules/root.html#torch_geometric_temporal.nn.recurrent.gconv_gru.GConvGRU)** from Owen: [Multilinear Extensions of Games](https://www.jstor.org/stable/2661445?seq=1#metadata_info_tab_contents)
+* **[Multilinear Extension]()** from Owen: [Multilinear Extensions of Games](https://www.jstor.org/stable/2661445?seq=1#metadata_info_tab_contents)
 
-* **[Monte Carlo Permutation Sampling](https://pytorch-geometric-temporal.readthedocs.io/en/latest/modules/root.html#torch_geometric_temporal.nn.recurrent.gconv_lstm.GConvLSTM)** from Maleki *et al.*: [Bounding the Estimation Error of Sampling-based Shapley Value Approximation](https://arxiv.org/abs/1306.4265)
+* **[Monte Carlo Permutation Sampling]()** from Maleki *et al.*: [Bounding the Estimation Error of Sampling-based Shapley Value Approximation](https://arxiv.org/abs/1306.4265)
 
-* **[Exact Enumeration](https://pytorch-geometric-temporal.readthedocs.io/en/latest/modules/root.html#torch_geometric_temporal.nn.recurrent.gc_lstm.GCLSTM)** from Shapley: [A Value for N-Person Games](https://www.rand.org/pubs/papers/P0295.html)
+* **[Exact Enumeration]()** from Shapley: [A Value for N-Person Games](https://www.rand.org/pubs/papers/P0295.html)
 
 --------------------------------------------------------------------------------
 
