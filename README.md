@@ -81,7 +81,7 @@ class RecurrentGCN(torch.nn.Module):
 In detail, the following methods can be used.
 
 
-* **[Voting Game Approximation](https://pytorch-geometric-temporal.readthedocs.io/en/latest/modules/root.html#torch_geometric_temporal.nn.recurrent.dcrnn.DCRNN)** from Li *et al.*: [Diffusion Convolutional Recurrent Neural Network: Data-Driven Traffic Forecasting](https://arxiv.org/abs/1707.01926)
+* **[Voting Game Approximation](https://pytorch-geometric-temporal.readthedocs.io/en/latest/modules/root.html#torch_geometric_temporal.nn.recurrent.dcrnn.DCRNN)** from Fatima *et al.*: [A Linear Approximation Method for the Shapley Value](https://www.sciencedirect.com/science/article/pii/S0004370208000696)
 
 * **[Multi Linear Extension](https://pytorch-geometric-temporal.readthedocs.io/en/latest/modules/root.html#torch_geometric_temporal.nn.recurrent.gconv_gru.GConvGRU)** from Seo *et al.*: [Structured Sequence Modeling with Graph  Convolutional Recurrent Networks](https://arxiv.org/abs/1612.07659)
 
