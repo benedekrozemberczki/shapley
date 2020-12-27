@@ -49,7 +49,7 @@ If you find *Shapley* please consider adding the following citation:
 
 **A simple example**
 
-Shapley makes solving voting games quite easy - see the accompanying [tutorial](https://pytorch-geometric-temporal.readthedocs.io/en/latest/notes/introduction.html#applications). For example, this is all it takes to solve a weighted voting game defined on the fly:
+Shapley makes solving voting games quite easy - see the accompanying [tutorial](https://shapley.readthedocs.io/en/latest/notes/introduction.html#applications). For example, this is all it takes to solve a weighted voting game defined on the fly:
 
 ```python
 import numpy as np
