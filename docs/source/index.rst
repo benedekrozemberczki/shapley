@@ -33,4 +33,3 @@ Shapley Documentation
    :caption: Package Reference
 
    modules/root
-   modules/dataset
