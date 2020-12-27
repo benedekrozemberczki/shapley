@@ -10,7 +10,7 @@
 [coverage-url]: https://codecov.io/github/benedekrozemberczki/pytorch_geometric_temporal?branch=master
 
 <p align="center">
-  <img width="90%" src="https://raw.githubusercontent.com/benedekrozemberczki/pytorch_geometric_temporal/master/docs/source/_static/img/text_logo.jpg?sanitize=true" />
+  <img width="90%" src="https://raw.githubusercontent.com/benedekrozemberczki/shapley.jpg?sanitize=true" />
 </p>
 
 --------------------------------------------------------------------------------
