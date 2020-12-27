@@ -14,6 +14,11 @@ tests_require = ["pytest",
 
 
 keywords = ["shapley",
+            "random-forest",
+            "data-science",
+            "explanability",
+            "voting-classifier",
+            "classifier",
             "machine-learning",
             "deep-learning",
             "deeplearning"]
@@ -24,7 +29,7 @@ setup(
   packages = find_packages(),
   version = "0.0.1",
   license = "MIT",
-  description = "A general purpose library for ... research.",
+  description = "A general purpose library for quantify the value of classifiers in a machine learning ensemble.",
   author = "Benedek Rozemberczki",
   author_email = "benedek.rozemberczki@gmail.com",
   url = "https://github.com/benedekrozemberczki/shapley",
