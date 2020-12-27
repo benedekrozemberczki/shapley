@@ -7,13 +7,13 @@ Shapley Documentation
 
 .. code-block:: latex
 
-   >@inproceedings{karateclub,
-                   title = {{Karate Club: An API Oriented Open-source Python Framework for Unsupervised Learning on Graphs}},
-                   author = {Benedek Rozemberczki and Oliver Kiss and Rik Sarkar},
-                   year = {2020},
-                   pages = {3125–3132},
-	           booktitle = {Proceedings of the 29th ACM International Conference on Information and Knowledge Management (CIKM '20)},
-	           organization = {ACM},
+    >@misc{rozemberczki_shapley,
+           author = {Benedek, Rozemberczki and Rik, Sarkar},
+           title = {{The Shapley Value of Classifiers in Ensemble Games}},
+           year = {2020},
+           publisher = {GitHub},
+           journal = {GitHub repository},
+           howpublished = {\url{https://github.com/benedekrozemberczki/shapley}},
     }
 
 
