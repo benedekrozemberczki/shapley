@@ -84,6 +84,10 @@ If you notice anything unexpected, please open an [issue](https://benedekrozembe
 
 **Installation**
 
+```
+$ pip install shapley
+```
+
 **Running tests**
 
 ```
