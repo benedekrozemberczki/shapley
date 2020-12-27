@@ -69,7 +69,7 @@ In detail, the following methods can be used.
 
 * **[Monte Carlo Permutation Sampling](https://pytorch-geometric-temporal.readthedocs.io/en/latest/modules/root.html#torch_geometric_temporal.nn.recurrent.gconv_lstm.GConvLSTM)** from Maleki *et al.*: [Bounding the Estimation Error of Sampling-based Shapley Value Approximation](https://arxiv.org/abs/1306.4265)
 
-* **[Exact Enumeration](https://pytorch-geometric-temporal.readthedocs.io/en/latest/modules/root.html#torch_geometric_temporal.nn.recurrent.gc_lstm.GCLSTM)** from Shapley: [A value for n-person games](https://www.rand.org/pubs/papers/P0295.html)
+* **[Exact Enumeration](https://pytorch-geometric-temporal.readthedocs.io/en/latest/modules/root.html#torch_geometric_temporal.nn.recurrent.gc_lstm.GCLSTM)** from Shapley: [A Value for N-Person Games](https://www.rand.org/pubs/papers/P0295.html)
 
 --------------------------------------------------------------------------------
 
