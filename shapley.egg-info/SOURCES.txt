@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+shapley/__init__.py
+shapley/game_solver.py
+shapley.egg-info/PKG-INFO
+shapley.egg-info/SOURCES.txt
+shapley.egg-info/dependency_links.txt
+shapley.egg-info/requires.txt
+shapley.egg-info/top_level.txt
+shapley/solvers/__init__.py
+shapley/solvers/permutation_sampling.py

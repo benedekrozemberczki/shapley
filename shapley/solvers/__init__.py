@@ -1,1 +1,1 @@
-from permutation_sampling import PermutationSampling
+from .permutation_sampling import PermutationSampling

@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: shapley
+Version: 0.0.1
+Summary: A general purpose library for ... research.
+Home-page: https://github.com/benedekrozemberczki/shapley
+Author: Benedek Rozemberczki
+Author-email: benedek.rozemberczki@gmail.com
+License: MIT
+Download-URL: https://github.com/benedekrozemberczki/shapley/archive/v_00001.tar.gz
+Description: UNKNOWN
+Keywords: shapley,machine-learning,deep-learning,deeplearning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
