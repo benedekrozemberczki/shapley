@@ -1,7 +1,7 @@
 import datetime
 import sphinx_rtd_theme
 import doctest
-import karateclub
+import shapley
 import community
 
 extensions = [
@@ -18,11 +18,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 author = 'Benedek Rozemberczki'
-project = 'karateclub'
+project = 'shapley'
 copyright = '{}, {}'.format(datetime.datetime.now().year, author)
 
-#version = karateclub.__version__
-#release = karateclub.__version__
 
 html_theme = 'sphinx_rtd_theme'
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
@@ -36,7 +34,7 @@ html_theme_options = {
     'logo_only': True,
 }
 
-html_logo = '_static/img/karate_logo_text.jpg'
+html_logo = '_static/img/shapley_logo_text.jpg'
 html_static_path = ['_static']
 html_context = {'css_files': ['_static/css/custom.css']}
 
