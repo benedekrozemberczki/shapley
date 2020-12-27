@@ -5,17 +5,17 @@ Install the package by using pip:
 
     .. code-block:: none
 
-        $ pip install karateclub
+        $ pip install shapley
 
-Upgrade your outdated Karate Club version by using:
+Upgrade your outdated Shapley version by using:
 
     .. code-block:: none
 
-        $ pip install karateclub --upgrade
+        $ pip install shapley --upgrade
 
 
 To check your current package version just simply run:
 
     .. code-block:: none
 
-        $ pip freeze | grep karateclub
+        $ pip freeze | grep shapley
