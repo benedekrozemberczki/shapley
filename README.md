@@ -37,7 +37,7 @@ If you find *Shapley* please consider adding the following citation:
 ```bibtex
 @misc{pytorch_geometric_temporal,
       author = {Benedek, Rozemberczki and Paul, Scherer},
-      title = {{PyTorch Geometric Temporal}},
+      title = {{Shapley: Solving Voting Games Efficiently.}},
       year = {2020},
       publisher = {GitHub},
       journal = {GitHub repository},
