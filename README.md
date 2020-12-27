@@ -115,7 +115,7 @@ In detail, the following temporal graph neural networks were implemented.
 
 
 Head over to our [documentation](https://pytorch-geometric-temporal.readthedocs.io) to find out more about installation, creation of datasets and a full list of implemented methods and available datasets.
-For a quick start, check out the [examples](https://github.com/benedekrozemberczki/pytorch_geometric_temporal/tree/master/examples) in the `examples/` directory.
+For a quick start, check out the [examples](https://github.com/benedekrozemberczki/shapley/tree/master/examples) in the `examples/` directory.
 
 If you notice anything unexpected, please open an [issue](https://benedekrozemberczki/pytorch_geometric_temporal/issues). If you are missing a specific method, feel free to open a [feature request](https://github.com/rusty1s/pytorch_geometric/issues).
 
@@ -123,52 +123,6 @@ If you notice anything unexpected, please open an [issue](https://benedekrozembe
 --------------------------------------------------------------------------------
 
 **Installation**
-
-**PyTorch 1.7.0**
-
-To install the binaries for PyTorch 1.7.0, simply run
-
-```sh
-$ pip install torch-scatter==latest+${CUDA} -f https://pytorch-geometric.com/whl/torch-1.7.0.html
-$ pip install torch-sparse==latest+${CUDA} -f https://pytorch-geometric.com/whl/torch-1.7.0.html
-$ pip install torch-cluster==latest+${CUDA} -f https://pytorch-geometric.com/whl/torch-1.7.0.html
-$ pip install torch-spline-conv==latest+${CUDA} -f https://pytorch-geometric.com/whl/torch-1.7.0.html
-$ pip install torch-geometric
-$ pip install torch-geometric-temporal
-```
-
-where `${CUDA}` should be replaced by either `cpu`, `cu92`, `cu101`, `cu102` or `cu110` depending on your PyTorch installation.
-
-|             | `cpu` | `cu92` | `cu101` | `cu102` | `cu110` |
-|-------------|-------|--------|---------|---------|---------|
-| **Linux**   | ✅    | ✅     | ✅     | ✅      | ✅     |
-| **Windows** | ✅    | ❌     | ✅     | ✅      | ✅     |
-| **macOS**   | ✅    |        |         |         |         |
-
---------------------------------------------------------------------------------
-
-**PyTorch 1.6.0**
-
-To install the binaries for PyTorch 1.6.0, simply run
-
-```sh
-$ pip install torch-scatter==latest+${CUDA} -f https://pytorch-geometric.com/whl/torch-1.6.0.html
-$ pip install torch-sparse==latest+${CUDA} -f https://pytorch-geometric.com/whl/torch-1.6.0.html
-$ pip install torch-cluster==latest+${CUDA} -f https://pytorch-geometric.com/whl/torch-1.6.0.html
-$ pip install torch-spline-conv==latest+${CUDA} -f https://pytorch-geometric.com/whl/torch-1.6.0.html
-$ pip install torch-geometric
-$ pip install torch-geometric-temporal
-```
-
-where `${CUDA}` should be replaced by either `cpu`, `cu92`, `cu101` or `cu102` depending on your PyTorch installation.
-
-|             | `cpu` | `cu92` | `cu101` | `cu102` |
-|-------------|-------|--------|---------|---------|
-| **Linux**   | ✅    | ✅    | ✅     | ✅      |
-| **Windows** | ✅    | ❌    | ✅     | ✅      |
-| **macOS**   | ✅    |        |         |         |
-
---------------------------------------------------------------------------------
 
 **Running tests**
 
