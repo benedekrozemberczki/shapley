@@ -7,16 +7,8 @@ class PermutationSampler(SolutionConcept):
     For details see: `"" 
     <https://arxiv.org/abs/1709.04875>`_
 
-    Based off the temporal convolution introduced in "Convolutional 
-    Sequence to Sequence Learning"  <https://arxiv.org/abs/1709.04875>`_
-
-    NB. Given an input sequence of length m and a kernel size of k
-    the output sequence will have length m-(k-1)
-
     Args:
-        in_channels (int): Number of input features.
-        out_channels (int): Number of output features.
-        kernel_size (int): Convolutional kernel size.
+        permutations (int): Number of permutations.
     """    
     def __init__(self, permutations: int=1000):
         self.permutations = permutations
