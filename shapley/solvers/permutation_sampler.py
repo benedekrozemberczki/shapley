@@ -22,10 +22,8 @@ class PermutationSampler(SolutionConcept):
             self._Phi[np.arange(W.shape[0]), pivotal] = self._Phi[np.arange(W.shape[0]), pivotal] + 1
         self._Phi = self._Phi/self.permutations
 
-    def solve_game(self, W: np.ndarray, q: float=0.5) -> np.ndarray:
+    def solve_game(self, W: np.ndarray, q: float) -> np.ndarray:
         self._setup(W)
         self._run_permutations(W, q)
         self._run_sanity_check(W, self._Phi)
         return self._Phi
-
-
