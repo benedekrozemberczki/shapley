@@ -12,4 +12,4 @@ def test_permutation_sampling():
     W = np.random.uniform(0,1,(100, 10))
     Phi = solver.solve_game(W, q = 0.5)
 
-    assert Phi.shape = W.shape
+    assert Phi.shape == W.shape
