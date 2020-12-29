@@ -22,6 +22,7 @@ class PermutationSampler(SolutionConcept):
         self.permutations = permutations
 
     def _setup(self, W: np.ndarray):
+        """Creating an empty Shapley value matrix and a player pool."""
         self._Phi = np.zeros(W.shape)
         self._indices = [i for i in range(W.shape[1])]
 
