@@ -1,5 +1,7 @@
 """Solution Concept base class."""
 
+import numpy as np
+
 class SolutionConcept(object):
     """Solution Concept base class with constructor and public methods."""
 

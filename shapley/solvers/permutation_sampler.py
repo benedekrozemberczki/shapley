@@ -7,7 +7,6 @@ class PermutationSampler(SolutionConcept):
     def __init__(self, permutations: int=1000):
         self.permutations = permutations
 
-
     def _setup(self, W):
         self._Phi = np.zeros(W.shape)
         self._indices = [i for i in range(W.shape[1])]
@@ -19,7 +18,7 @@ class PermutationSampler(SolutionConcept):
             W_perm = W[:, self._indices]
             cum_sum = np.cumsum(W_perm, axis=1)
             pivotal = np.argmax(cum_sum>q, axis=1)
-            self._Phi[np.arange(W.shape[0]), pivotal] = self._Phi[np.arange(W.shape[0]), pivotal] + 1
+            self._Phi[np.arange(W.shape[0]), pivotal] += 1.0
         self._Phi = self._Phi/self.permutations
 
     def solve_game(self, W: np.ndarray, q: float) -> np.ndarray:
