@@ -9,7 +9,7 @@ class SolutionConcept(object):
         pass
 
     def _check_quota(self, q):
-        assert 0.0=<q and q=<1.0
+        assert 0.0<=q
 
     def _verify_result_shape(self, W, Phi):
         assert W.shape == Phi.shape
