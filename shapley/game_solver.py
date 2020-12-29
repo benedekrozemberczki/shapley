@@ -1,10 +1,10 @@
 
-"""Game Solver base class."""
+"""Solution Concept base class."""
 
-class GameSolver(object):
-    """Game Solver base class with constructor and public methods."""
+class SolutionConcept(object):
+    """SolutionConcept base class with constructor and public methods."""
 
     def __init__(self):
-        """Creating a Game Solver."""
+        """Creating a Solution Concept."""
         pass
 

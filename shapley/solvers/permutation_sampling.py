@@ -1,5 +1,6 @@
 import random
 import numpy as np
+from shapley.game_solver import Estimator
 
 class PermutationSampler(object):
 
@@ -27,3 +28,5 @@ class PermutationSampler(object):
         self._setup(W)
         Phi = self._run_permutations(W)
         return Phi
+
+
