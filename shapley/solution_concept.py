@@ -11,7 +11,7 @@ class SolutionConcept(object):
 
     def _check_quota(self, q: float):
         """Checking for negative quota."""
-        assert 0.0<=q
+        assert 0.0 <= q
 
     def _verify_result_shape(self, W: np.ndarray, Phi: np.ndarray):
         """Checking the shape of the Shapley value matrix."""
