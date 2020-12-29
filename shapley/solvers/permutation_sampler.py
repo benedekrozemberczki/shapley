@@ -45,4 +45,5 @@ class PermutationSampler(SolutionConcept):
         self._setup(W)
         self._run_permutations(W, q)
         self._run_sanity_check(W, self._Phi)
+        self._set_average_shapley()
         return self._Phi
