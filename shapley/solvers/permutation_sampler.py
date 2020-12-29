@@ -36,11 +36,11 @@ class PermutationSampler(SolutionConcept):
         r"""Solving the weigted voting game(s).
 
         Args:
-            W (Numpy array): Weights in the games with size :math:`n \times m`.
+            W (Numpy array): Weights in the :math:`n` games for the :math:`m` players with size :math:`n \times m`.
             q (float): Quota in the games.
 
         Return Types:
-            Phi (Numpy array): Approximate Shapley values of players in game(s).
+            Phi (Numpy array): Approximate Shapley matrix of players in the game(s) with size :math:`n \times m`..
         """
         self._check_quota(q)
         self._setup(W)
