@@ -7,6 +7,6 @@ shapley
 Solutions 
 --------------------
 
-.. automodule:: shapley.solvers.permutation_sampling
+.. automodule:: shapley.solvers.permutation_sampler
     :members:
     :undoc-members:
