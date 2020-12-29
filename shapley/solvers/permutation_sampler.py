@@ -22,6 +22,15 @@ class PermutationSampler(SolutionConcept):
         self._Phi = self._Phi/self.permutations
 
     def solve_game(self, W: np.ndarray, q: float) -> np.ndarray:
+        r"""Solving the weigted voting game(s).
+
+        Args:
+            W (Numpy array): Weights in the games. 
+            q (float): Quota in the games.
+
+        Return Types:
+            Out (PyTorch Float Tensor): (Sequence) of node features
+        """
         self._check_quota(q)
         self._setup(W)
         self._run_permutations(W, q)
