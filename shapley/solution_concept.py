@@ -27,7 +27,9 @@ class SolutionConcept(object):
         self._verify_distribution(Phi)
 
     def _set_average_shapley(self):
+        """Calculating the average Shapley value scores."""
         self._Phi_tilde = np.mean(self._Phi, axis=0)
 
     def _set_shapley_entropy(self):
+        """Calculating the Shapley entropy score."""
         self._shapley_entropy = -np.sum(self._Phi_tilde*np.log(self._Phi_tilde))
