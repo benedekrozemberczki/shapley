@@ -22,5 +22,6 @@ class SolutionConcept(object):
         assert np.sum(Phi) == Phi.shape[0]
 
     def _run_sanity_check(self, W: np.ndarray, Phi: np.ndarray):
+        """Checking the basic assumptions about the Shapley values."""
         self._verify_result_shape(W, Phi)
         self._verify_distribution(Phi)
