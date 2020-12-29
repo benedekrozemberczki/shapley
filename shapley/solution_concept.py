@@ -26,7 +26,7 @@ class SolutionConcept(object):
         self._verify_result_shape(W, Phi)
         self._verify_distribution(Phi)
 
-    def get_shapley_entropy(self):
-        Phi_tilde = np.mean(self.Phi, axis=0)
-        ent = -np.sum(Phi_tilde*np.log(Phi_tilde))
-        return ent
+    def get_shapley_entropy(self, Phi):
+        Phi_tilde = np.mean(Phi, axis=0)
+        shapley_entropy = -np.sum(Phi_tilde*np.log(Phi_tilde))
+        return shapley_entropy
