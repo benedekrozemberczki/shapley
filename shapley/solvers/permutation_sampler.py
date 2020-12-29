@@ -7,7 +7,7 @@ class PermutationSampler(SolutionConcept):
     def __init__(self, permutations: int=1000):
         self.permutations = permutations
 
-    def _setup(self, W):
+    def _setup(self, W: np.ndarray):
         self._Phi = np.zeros(W.shape)
         self._indices = [i for i in range(W.shape[1])]
 
