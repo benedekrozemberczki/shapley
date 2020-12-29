@@ -29,7 +29,7 @@ class PermutationSampler(SolutionConcept):
             q (float): Quota in the games.
 
         Return Types:
-            Out (PyTorch Float Tensor): (Sequence) of node features
+            Phi (Numpy array): Approximate Shapley values of players in game(s).
         """
         self._check_quota(q)
         self._setup(W)
