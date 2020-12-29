@@ -3,7 +3,21 @@ import numpy as np
 from shapley.solution_concept import SolutionConcept
 
 class PermutationSampler(SolutionConcept):
+    r"""Permutation sampler to solve a block of weighted voting games.
+    For details see: `"" 
+    <https://arxiv.org/abs/1709.04875>`_
 
+    Based off the temporal convolution introduced in "Convolutional 
+    Sequence to Sequence Learning"  <https://arxiv.org/abs/1709.04875>`_
+
+    NB. Given an input sequence of length m and a kernel size of k
+    the output sequence will have length m-(k-1)
+
+    Args:
+        in_channels (int): Number of input features.
+        out_channels (int): Number of output features.
+        kernel_size (int): Convolutional kernel size.
+    """    
     def __init__(self, permutations: int=1000):
         self.permutations = permutations
 
@@ -25,7 +39,7 @@ class PermutationSampler(SolutionConcept):
         r"""Solving the weigted voting game(s).
 
         Args:
-            W (Numpy array): Weights in the games. 
+            W (Numpy array): Weights in the games with size :math:`n \times m`.
             q (float): Quota in the games.
 
         Return Types:
