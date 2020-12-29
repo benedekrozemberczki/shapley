@@ -1,10 +1,10 @@
-shapley
+Shapley 
 ==================
 
 .. contents:: Contents
     :local:
 
-Solutions 
+Approximate Solutions 
 --------------------
 
 .. automodule:: shapley.solvers.permutation_sampler
