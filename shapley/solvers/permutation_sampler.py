@@ -3,8 +3,11 @@ import numpy as np
 from shapley.solution_concept import SolutionConcept
 
 class PermutationSampler(SolutionConcept):
-    r"""Permutation sampler to solve a block of weighted voting games.
-    For details see: `"Bounding the Estimation Error of Sampling-based Shapley Value Approximation" 
+    r"""Permutation sampler to solve a block of weighted voting games. The solver
+    samples random permutations of the players uniformly. In each permutation we
+    identify the pivotal voter. We use the empirical probability of becoming the
+    pivotal player as the Shapley value estimate. For details see this paper: 
+    `"Bounding the Estimation Error of Sampling-based Shapley Value Approximation" 
     <https://arxiv.org/abs/1306.4265>`_
 
     Args:
