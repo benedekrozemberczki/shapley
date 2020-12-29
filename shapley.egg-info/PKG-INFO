@@ -1,14 +1,14 @@
 Metadata-Version: 1.1
 Name: shapley
 Version: 0.0.1
-Summary: A general purpose library for ... research.
+Summary: A general purpose library for quantify the value of classifiers in a machine learning ensemble.
 Home-page: https://github.com/benedekrozemberczki/shapley
 Author: Benedek Rozemberczki
 Author-email: benedek.rozemberczki@gmail.com
 License: MIT
 Download-URL: https://github.com/benedekrozemberczki/shapley/archive/v_00001.tar.gz
 Description: UNKNOWN
-Keywords: shapley,machine-learning,deep-learning,deeplearning
+Keywords: shapley,random-forest,data-science,explanability,voting-classifier,classifier,machine-learning,deep-learning,deeplearning
 Platform: UNKNOWN
 Classifier: Development Status :: 3 - Alpha
 Classifier: Intended Audience :: Developers
