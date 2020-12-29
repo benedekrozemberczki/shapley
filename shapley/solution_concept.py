@@ -15,7 +15,7 @@ class SolutionConcept(object):
     def _verify_result_shape(self, W: np.ndarray, Phi: np.ndarray):
         assert W.shape == Phi.shape
 
-    def _verify_distribution(self, W: np.dnarray, Phi: np.ndarray):
+    def _verify_distribution(self, W: np.ndarray, Phi: np.ndarray):
         assert 1 == 1
 
     def _run_sanity_check(self, W: np.ndarray, Phi: np.ndarray):
