@@ -8,6 +8,14 @@ class SolutionConcept(object):
         """Creating a Solution Concept."""
         pass
 
-    def _verify_result(self, W, Phi):
+    
+
+    def _verify_result_shape(self, W, Phi):
         assert W.shape == Phi.shape
 
+    def _verify_distribution(self, W, Phi):
+        assert 1 == 1
+
+    def _run_sanity_check(sefl, W, Phi):
+        self._verify_result_shape(W, Phi)
+        self._verify_distribution(W, Phi)
