@@ -8,3 +8,6 @@ class SolutionConcept(object):
         """Creating a Solution Concept."""
         pass
 
+    def _verify_result(self, W, Phi):
+        assert W.shape == Phi.shape
+
