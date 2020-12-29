@@ -1,6 +1,6 @@
 import random
 import numpy as np
-from shapley.game_solver import Estimator
+from shapley.solution_concept import SolutionConcept
 
 class PermutationSampler(object):
 
