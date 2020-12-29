@@ -4,8 +4,8 @@ from shapley.solution_concept import SolutionConcept
 
 class PermutationSampler(SolutionConcept):
     r"""Permutation sampler to solve a block of weighted voting games.
-    For details see: `"" 
-    <https://arxiv.org/abs/1709.04875>`_
+    For details see: `"Bounding the Estimation Error of Sampling-based Shapley Value Approximation" 
+    <https://arxiv.org/abs/1306.4265>`_
 
     Args:
         permutations (int): Number of permutations.
