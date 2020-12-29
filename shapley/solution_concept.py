@@ -18,6 +18,7 @@ class SolutionConcept(object):
         assert W.shape == Phi.shape
 
     def _verify_distribution(self, Phi: np.ndarray):
+        """Verify distribution hypothesis."""
         assert np.sum(Phi) == Phi.shape[0]
 
     def _run_sanity_check(self, W: np.ndarray, Phi: np.ndarray):
