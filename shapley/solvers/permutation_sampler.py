@@ -11,7 +11,7 @@ class PermutationSampler(SolutionConcept):
         self._Phi = np.zeros(W.shape)
         self._indices = [i for i in range(W.shape[1])]
 
-    def _run_permutations(self, W, q):
+    def _run_permutations(self, W: np.ndarray, q: float):
 
         for _ in range(self.permutations):
             random.shuffle(self._indices)
