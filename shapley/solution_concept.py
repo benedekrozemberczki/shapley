@@ -28,4 +28,6 @@ class SolutionConcept(object):
 
     def _set_average_shapley(self):
         self._Phi_tilde = np.mean(self._Phi, axis=0)
-        print(self._Phi_tilde)
+
+    def _set_shapley_entropy(self):
+        self._shapley_entropy = -np.sum(self._Phi_tilde*np.log(self._Phi_tilde))
