@@ -27,6 +27,7 @@ class PermutationSampler(object):
     def solve_games(self, W: np.ndarray, q: float=0.5): -> Phi:
         self._setup(W)
         Phi = self._run_permutations(W)
+        self._verify_result(W, Phi)
         return Phi
 
 
