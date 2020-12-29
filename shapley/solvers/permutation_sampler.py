@@ -23,7 +23,6 @@ class PermutationSampler(SolutionConcept):
 
     def _run_permutations(self, W: np.ndarray, q: float):
         """Creating Monte Carlo permutations and finding the marginal voter."""
-
         for _ in range(self.permutations):
             random.shuffle(self._indices)
             W_perm = W[:, self._indices]
