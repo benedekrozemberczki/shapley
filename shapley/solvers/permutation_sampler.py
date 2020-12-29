@@ -23,6 +23,7 @@ class PermutationSampler(SolutionConcept):
         self._Phi = self._Phi/self.permutations
 
     def solve_game(self, W: np.ndarray, q: float) -> np.ndarray:
+        self._check_quota(q)
         self._setup(W)
         self._run_permutations(W, q)
         self._run_sanity_check(W, self._Phi)
