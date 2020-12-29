@@ -10,14 +10,16 @@ class SolutionConcept(object):
         pass
 
     def _check_quota(self, q: float):
+        """Checking for negative quota."""
         assert 0.0<=q
 
     def _verify_result_shape(self, W: np.ndarray, Phi: np.ndarray):
+        """Checking the shape of the Shapley value matrix."""
         assert W.shape == Phi.shape
 
-    def _verify_distribution(self, W: np.ndarray, Phi: np.ndarray):
-        assert 1 == 1
+    def _verify_distribution(self, Phi: np.ndarray):
+        assert np.sum(Phi) == Phi.shape[0]
 
     def _run_sanity_check(self, W: np.ndarray, Phi: np.ndarray):
         self._verify_result_shape(W, Phi)
-        self._verify_distribution(W, Phi)
+        self._verify_distribution(Phi)
