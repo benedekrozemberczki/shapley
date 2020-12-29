@@ -1,13 +1,15 @@
 import numpy as np
-from shapley import PermutationSampling
+from shapley import PermutationSampler
 
 
 def test_permutation_sampling():
     """
     Testing the Permutation Sampler class.
     """
-    solver = PermutationSampling(a = 1, b = 2)
 
-    out = solver.solve_game()
+    solver = PermutationSampling()
 
-    assert out == 3
+    W = np.random.uniform(0,1,(100, 10))
+    Phi = solver.solve_game(W, q = 0.5)
+
+    assert Phi.shape = W.shape
