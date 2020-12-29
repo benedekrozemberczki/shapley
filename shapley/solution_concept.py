@@ -16,6 +16,6 @@ class SolutionConcept(object):
     def _verify_distribution(self, W, Phi):
         assert 1 == 1
 
-    def _run_sanity_check(sefl, W, Phi):
+    def _run_sanity_check(self, W, Phi):
         self._verify_result_shape(W, Phi)
         self._verify_distribution(W, Phi)
