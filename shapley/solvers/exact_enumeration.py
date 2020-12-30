@@ -12,10 +12,12 @@ class ExactEnumeration(SolutionConcept):
         """Creating an empty Shapley value matrix and a player pool."""
         self._Phi = np.zeros(W.shape)
         self._indices = [i for i in range(W.shape[1])]
+        self.permutations = 0
 
     def _run_permutations(self, W: np.ndarray, q: float):
         """Creating Monte Carlo permutations and finding the marginal voter."""
         for perm in itertools.permutations(self._indices):
+            self.permutations = self.permutations + 1
             indices = list(perm)
             W_perm = W[:, indices]
             cum_sum = np.cumsum(W_perm, axis=1)
