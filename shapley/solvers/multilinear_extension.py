@@ -12,7 +12,7 @@ class MultilinearExtension(SolutionConcept):
         """Creating an empty Shapley value matrix."""
         self._Phi = np.zeros(W.shape)
 
-    def _run_permutations(self, W: np.ndarray, q: float):
+    def _approximate(self, W: np.ndarray, q: float):
         """Using the naive multilinear approximation method."""
         mu = np.zeros(W.shape) + np.sum(W, axis=1).reshape(-1, 1)
         var = np.zeros(W.shape) + np.std(W, axis=1).reshape(-1, 1)
@@ -30,7 +30,7 @@ class MultilinearExtension(SolutionConcept):
         """
         self._check_quota(q)
         self._setup(W)
-        self._run_permutations(W, q)
+        self._approximate(W, q)
         self._run_sanity_check(W, self._Phi)
         self._set_average_shapley()
         self._set_shapley_entropy()
