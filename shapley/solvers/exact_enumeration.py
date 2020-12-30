@@ -3,9 +3,8 @@ import numpy as np
 from shapley.solution_concept import SolutionConcept
 
 class ExactEnumeration(SolutionConcept):
-    r""". For details see this paper: 
-    `"Paper." 
-    <https://arxiv.org/abs/1306.4265>`_
+    r"""Exact enumeration of all permutations brute force. For details see this paper: 
+    `"A Value for N-Person Games." <https://www.rand.org/content/dam/rand/pubs/research_memoranda/2008/RM670.pdf>`_
     """
 
     def _setup(self, W: np.ndarray):
