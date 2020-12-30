@@ -1,3 +1,4 @@
+import itertools
 import numpy as np
 from shapley.solution_concept import SolutionConcept
 
@@ -6,9 +7,7 @@ class ExactEnumeration(SolutionConcept):
     `"Paper." 
     <https://arxiv.org/abs/1306.4265>`_
 
-    """    
-    def __init__(self, permutations: int=1000):
-        self.permutations = permutations
+    """
 
     def _setup(self, W: np.ndarray):
         """Creating an empty Shapley value matrix and a player pool."""
@@ -17,11 +16,11 @@ class ExactEnumeration(SolutionConcept):
 
     def _run_permutations(self, W: np.ndarray, q: float):
         """Creating Monte Carlo permutations and finding the marginal voter."""
-        for _ in range(self.permutations):
-            random.shuffle(self._indices)
-            W_perm = W[:, self._indices]
+        for perm in itertools.permutations(self._indices):
+            indices = list(perm)
+            W_perm = W[:, indices]
             cum_sum = np.cumsum(W_perm, axis=1)
-            pivotal = np.array(self._indices)[np.argmax(cum_sum>q, axis=1)]
+            pivotal = np.array(indices)[np.argmax(cum_sum>q, axis=1)]
             self._Phi[np.arange(W.shape[0]), pivotal] += 1.0
         self._Phi = self._Phi/self.permutations
 
