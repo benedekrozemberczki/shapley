@@ -2,20 +2,11 @@ import random
 import numpy as np
 from shapley.solution_concept import SolutionConcept
 
-class PermutationSampler(SolutionConcept):
-    r"""Permutation sampler to solve a block of weighted voting games. The solver
-    samples random permutations of the players uniformly. In each permutation we
-    identify the pivotal voter. We use the empirical probability of becoming the
-    pivotal player as the Shapley value estimate. For details see this paper: 
-    `"Bounding the Estimation Error of Sampling-based Shapley Value Approximation" 
+class MultilinearExtension(SolutionConcept):
+    r""". For details see this paper: 
+    `"Paper" 
     <https://arxiv.org/abs/1306.4265>`_
-
-    Args:
-        permutations (int): Number of permutations.
-    """    
-    def __init__(self, permutations: int=1000):
-        self.permutations = permutations
-
+    """
     def _setup(self, W: np.ndarray):
         """Creating an empty Shapley value matrix and a player pool."""
         self._Phi = np.zeros(W.shape)
