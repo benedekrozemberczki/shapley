@@ -65,7 +65,7 @@ In detail, the following methods can be used.
 
 * **[Expected Marginal Contribution Approximation]()** from Fatima *et al.*: [A Linear Approximation Method for the Shapley Value](https://www.sciencedirect.com/science/article/pii/S0004370208000696)
 
-* **[Multilinear Extension]()** from Owen: [Multilinear Extensions of Games](https://www.jstor.org/stable/2661445?seq=1#metadata_info_tab_contents)
+* **[Multilinear Extension](https://shapley.readthedocs.io/en/latest/modules/root.html#shapley.solvers.multilinear_extension.Multilinear_Extension)** from Owen: [Multilinear Extensions of Games](https://www.jstor.org/stable/2661445?seq=1#metadata_info_tab_contents)
 
 * **[Monte Carlo Permutation Sampling](https://shapley.readthedocs.io/en/latest/modules/root.html#shapley.solvers.permutation_sampler.PermutationSampler)** from Maleki *et al.*: [Bounding the Estimation Error of Sampling-based Shapley Value Approximation](https://arxiv.org/abs/1306.4265)
 
