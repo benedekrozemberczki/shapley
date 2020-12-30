@@ -1,6 +1,7 @@
-import numpy as np
 import math
+import numpy as np
 from shapley import PermutationSampler
+from shapley import MultilinearExtension
 
 
 def test_permutation_sampling():
