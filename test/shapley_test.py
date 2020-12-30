@@ -20,7 +20,7 @@ def test_permutation_sampling():
     assert Phi_tilde.shape == (W.shape[1],)
     assert -math.log(1.0/W.shape[1])-entropy > 0
 
-    solver = PermutationSampler(permutations=100)
+    solver = PermutationSampler(permutations=10000)
 
     W = np.random.uniform(0, 1, (100, 50))
     solver.solve_game(W, q = 10)
