@@ -36,3 +36,6 @@ class SolutionConcept(object):
 
     def get_average_shapley(self):
         return self._Phi_tilde
+
+    def get_shapley_entropy(self):
+        return self._shapley_entropy
