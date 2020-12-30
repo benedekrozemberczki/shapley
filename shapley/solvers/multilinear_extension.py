@@ -6,7 +6,7 @@ from shapley.solution_concept import SolutionConcept
 class MultilinearExtension(SolutionConcept):
     r"""The multilinear extension approximation of the Shapley value in a weighted
     voting game using the technique proposed by Owen. For details see this paper: 
-    `"Multilinear Extensions of Games"  <https://www.jstor.org/stable/2661445#metadata_info_tab_contents>`_
+    `"Multilinear Extensions of Games."  <https://www.jstor.org/stable/2661445#metadata_info_tab_contents>`_
     """
     def _setup(self, W: np.ndarray):
         """Creating an empty Shapley value matrix."""
