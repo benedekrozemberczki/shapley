@@ -25,6 +25,7 @@ def test_permutation_sampling():
     entropy = solver.get_shapley_entropy()
 
     assert Phi.shape == W.shape
+    assert Phi_tilde.shape = (W.shape[0],)
 
     solver = PermutationSampler(permutations=10000)
 
@@ -34,3 +35,4 @@ def test_permutation_sampling():
     entropy = solver.get_shapley_entropy()
 
     assert Phi.shape == W.shape
+    assert Phi_tilde.shape = (W.shape[0],)
