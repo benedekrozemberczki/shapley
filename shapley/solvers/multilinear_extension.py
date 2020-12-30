@@ -12,7 +12,7 @@ class MultilinearExtension(SolutionConcept):
         self._Phi = np.zeros(W.shape)
 
     def _run_permutations(self, W: np.ndarray, q: float):
-        """Creating Monte Carlo permutations and finding the marginal voter."""
+        """Using the naive multilinear approximation method."""
         for _ in range(self.permutations):
             random.shuffle(self._indices)
             W_perm = W[:, self._indices]
