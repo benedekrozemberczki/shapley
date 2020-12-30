@@ -27,7 +27,7 @@ class PermutationSampler(SolutionConcept):
             random.shuffle(self._indices)
             W_perm = W[:, self._indices]
             cum_sum = np.cumsum(W_perm, axis=1)
-            pivotal = np.argmax(cum_sum>q, axis=1)
+            pivotal = np.array(self._indices)[np.argmax(cum_sum>q, axis=1)]
             self._Phi[np.arange(W.shape[0]), pivotal] += 1.0
         self._Phi = self._Phi/self.permutations
 
