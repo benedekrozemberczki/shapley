@@ -4,6 +4,13 @@ Shapley
 .. contents:: Contents
     :local:
 
+Eact Solution
+--------------------
+
+.. automodule:: shapley.solvers.exact_solution
+    :members:
+    :inherited-members:
+
 Approximate Solutions 
 --------------------
 
