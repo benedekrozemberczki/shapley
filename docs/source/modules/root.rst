@@ -9,5 +9,4 @@ Approximate Solutions
 
 .. automodule:: shapley.solvers.permutation_sampler
     :members:
-    :undoc-members:
     :inherited-members:
