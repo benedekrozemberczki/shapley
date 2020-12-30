@@ -8,9 +8,8 @@ class MultilinearExtension(SolutionConcept):
     <https://arxiv.org/abs/1306.4265>`_
     """
     def _setup(self, W: np.ndarray):
-        """Creating an empty Shapley value matrix and a player pool."""
+        """Creating an empty Shapley value matrix."""
         self._Phi = np.zeros(W.shape)
-        self._indices = [i for i in range(W.shape[1])]
 
     def _run_permutations(self, W: np.ndarray, q: float):
         """Creating Monte Carlo permutations and finding the marginal voter."""
