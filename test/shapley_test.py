@@ -51,8 +51,8 @@ def test_multilinear_extension():
 
     solver = MultilinearExtension()
 
-    W = np.random.uniform(0, 1, (100, 100))
-    solver.solve_game(W, q = 25)
+    W = np.random.uniform(0, 1, (100, 97))
+    solver.solve_game(W, q = 0.25)
     Phi = solver.get_solution()
     Phi_tilde = solver.get_average_shapley()
     entropy = solver.get_shapley_entropy()
@@ -63,8 +63,8 @@ def test_multilinear_extension():
 
     solver = MultilinearExtension()
 
-    W = np.random.uniform(0, 1, (100, 50))
-    solver.solve_game(W, q = 10)
+    W = np.random.uniform(0, 1, (100, 48))
+    solver.solve_game(W, q = 0.25)
     Phi = solver.get_solution()
     Phi_tilde = solver.get_average_shapley()
     entropy = solver.get_shapley_entropy()
@@ -76,7 +76,7 @@ def test_multilinear_extension():
     solver = MultilinearExtension()
 
     W = np.random.uniform(0, 1, (10, 13))
-    solver.solve_game(W, q = 3)
+    solver.solve_game(W, q = 0.13)
     Phi = solver.get_solution()
     Phi_tilde = solver.get_average_shapley()
     entropy = solver.get_shapley_entropy()

@@ -14,13 +14,11 @@ class MultilinearExtension(SolutionConcept):
 
     def _approximate(self, W: np.ndarray, q: float):
         """Using the naive multilinear approximation method."""
-        #W = W / W.sum(axis=1)
-        mu = np.zeros(W.shape) + np.mean(W, axis=1).reshape(-1, 1)
-        std = np.zeros(W.shape) + np.std(W, axis=1).reshape(-1, 1)
-        upper = (np.zeros(W.shape) + q - mu)/std
-        lower = (np.zeros(W.shape) + q - W - mu)/std
+        mu = np.tile(np.mean(W, axis=1).reshape(-1, 1), W.shape[1])
+        var = np.tile(np.var(W, axis=1).reshape(-1, 1), W.shape[1])
+        upper = (np.zeros(W.shape) + q - mu)/var
+        lower = (np.zeros(W.shape) + q - W - mu)/var
         self._Phi = norm.cdf(upper, 0, 1) - norm.cdf(lower, 0, 1)
-        print(self._Phi)
         self._Phi = self._Phi / np.sum(self._Phi, axis=1).reshape(-1, 1)
 
     def solve_game(self, W: np.ndarray, q: float):
