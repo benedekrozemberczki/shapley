@@ -6,7 +6,6 @@ class ExactEnumeration(SolutionConcept):
     r""". For details see this paper: 
     `"Paper." 
     <https://arxiv.org/abs/1306.4265>`_
-
     """
 
     def _setup(self, W: np.ndarray):
