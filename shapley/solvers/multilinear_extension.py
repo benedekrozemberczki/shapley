@@ -1,5 +1,6 @@
 import random
 import numpy as np
+from scipy.stats import norm
 from shapley.solution_concept import SolutionConcept
 
 class MultilinearExtension(SolutionConcept):
@@ -13,7 +14,12 @@ class MultilinearExtension(SolutionConcept):
 
     def _run_permutations(self, W: np.ndarray, q: float):
         """Using the naive multilinear approximation method."""
-        pass
+        mu = np.zeros(W.shape) + np.sum(W, axis=1).reshape(-1, 1)
+        var = np.zeros(W.shape) + np.std(W, axis=1).reshape(-1, 1)
+        upper = (np.zeros(W.shape) + q - mu)/var
+        lower = (np.zeros(X_tilde.shape) + q - W -mu)/var
+        self._Phi = norm.cdf(upper, 0, 1) - norm.cdf(lower, 0, 1)
+        self._Phi = self._Phi / np.sum(self._Phi, axis=1).reshape(-1, 1)
 
     def solve_game(self, W: np.ndarray, q: float):
         r"""Solving the weigted voting game(s).
