@@ -18,7 +18,7 @@ def test_permutation_sampling():
 
     assert Phi.shape == W.shape
     assert Phi_tilde.shape == (W.shape[1],)
-    assert -math.log(1.0/W.shape[1])-entropy > 0
+    assert -math.log(1.0/W.shape[1])-entropy >= 0
 
     solver = PermutationSampler(permutations=100)
 
@@ -30,7 +30,7 @@ def test_permutation_sampling():
 
     assert Phi.shape == W.shape
     assert Phi_tilde.shape == (W.shape[1],)
-    assert -math.log(1.0/W.shape[1])-entropy > 0
+    assert -math.log(1.0/W.shape[1])-entropy >= 0
 
     solver = PermutationSampler(permutations=10000)
 
@@ -42,4 +42,4 @@ def test_permutation_sampling():
 
     assert Phi.shape == W.shape
     assert Phi_tilde.shape == (W.shape[1],)
-    assert -math.log(1.0/W.shape[1])-entropy > 0
+    assert -math.log(1.0/W.shape[1])-entropy >= 0
