@@ -17,7 +17,7 @@ class MultilinearExtension(SolutionConcept):
         mu = np.zeros(W.shape) + np.sum(W, axis=1).reshape(-1, 1)
         var = np.zeros(W.shape) + np.std(W, axis=1).reshape(-1, 1)
         upper = (np.zeros(W.shape) + q - mu)/var
-        lower = (np.zeros(X_tilde.shape) + q - W -mu)/var
+        lower = (np.zeros(W.shape) + q - W -mu)/var
         self._Phi = norm.cdf(upper, 0, 1) - norm.cdf(lower, 0, 1)
         self._Phi = self._Phi / np.sum(self._Phi, axis=1).reshape(-1, 1)
 

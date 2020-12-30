@@ -9,4 +9,5 @@ shapley.egg-info/dependency_links.txt
 shapley.egg-info/requires.txt
 shapley.egg-info/top_level.txt
 shapley/solvers/__init__.py
+shapley/solvers/multilinear_extension.py
 shapley/solvers/permutation_sampler.py
