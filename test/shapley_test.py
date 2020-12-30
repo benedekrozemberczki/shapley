@@ -101,7 +101,7 @@ def test_exact_enumeration():
 
     assert Phi.shape == W.shape
     assert Phi_tilde.shape == (W.shape[1],)
-    assert -math.log(1.0/W.shape[1])-entropy > 0
+    assert -math.log(1.0/W.shape[1])-entropy > -0.001
 
     solver = ExactEnumeration()
 
@@ -113,7 +113,7 @@ def test_exact_enumeration():
 
     assert Phi.shape == W.shape
     assert Phi_tilde.shape == (W.shape[1],)
-    assert -math.log(1.0/W.shape[1])-entropy > 0
+    assert -math.log(1.0/W.shape[1])-entropy > -0.001
 
     solver = ExactEnumeration()
 
@@ -125,4 +125,4 @@ def test_exact_enumeration():
 
     assert Phi.shape == W.shape
     assert Phi_tilde.shape == (W.shape[1],)
-    assert -math.log(1.0/W.shape[1])-entropy > 0
+    assert -math.log(1.0/W.shape[1])-entropy > -0.001
