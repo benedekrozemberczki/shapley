@@ -33,3 +33,6 @@ class SolutionConcept(object):
     def _set_shapley_entropy(self):
         """Calculating the Shapley entropy score."""
         self._shapley_entropy = -np.sum(self._Phi_tilde*np.log(self._Phi_tilde))
+
+    def get_average_shapley(self):
+        return self._Phi_tilde
