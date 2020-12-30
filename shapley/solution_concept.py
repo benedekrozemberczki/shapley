@@ -39,5 +39,5 @@ class SolutionConcept(object):
         return self._Phi_tilde
 
     def get_shapley_entropy(self):
-        """Calculating the Shapley entropy score."""
+        """Getting the Shapley entropy score."""
         return self._shapley_entropy
