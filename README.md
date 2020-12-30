@@ -69,7 +69,7 @@ In detail, the following methods can be used.
 
 * **[Monte Carlo Permutation Sampling](https://shapley.readthedocs.io/en/latest/modules/root.html#shapley.solvers.permutation_sampler.PermutationSampler)** from Maleki *et al.*: [Bounding the Estimation Error of Sampling-based Shapley Value Approximation](https://arxiv.org/abs/1306.4265)
 
-* **[Exact Enumeration]()** from Shapley: [A Value for N-Person Games](https://www.rand.org/pubs/papers/P0295.html)
+* **[Exact Enumeration](https://shapley.readthedocs.io/en/latest/modules/root.html#shapley.solvers.exact_enumeration.ExactEnumeration)** from Shapley: [A Value for N-Person Games](https://www.rand.org/pubs/papers/P0295.html)
 
 --------------------------------------------------------------------------------
 
