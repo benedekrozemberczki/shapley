@@ -1,5 +1,6 @@
 import math
 import numpy as np
+from shapley import ExactEnumeration
 from shapley import PermutationSampler
 from shapley import MultilinearExtension
 
@@ -47,6 +48,47 @@ def test_permutation_sampling():
 def test_multilinear_extension():
     """
     Testing the Permutation Sampler class.
+    """
+
+    solver = MultilinearExtension()
+
+    W = np.random.uniform(0, 1, (100, 97))
+    solver.solve_game(W, q = 0.25)
+    Phi = solver.get_solution()
+    Phi_tilde = solver.get_average_shapley()
+    entropy = solver.get_shapley_entropy()
+
+    assert Phi.shape == W.shape
+    assert Phi_tilde.shape == (W.shape[1],)
+    assert -math.log(1.0/W.shape[1])-entropy > 0
+
+    solver = MultilinearExtension()
+
+    W = np.random.uniform(0, 1, (100, 48))
+    solver.solve_game(W, q = 0.25)
+    Phi = solver.get_solution()
+    Phi_tilde = solver.get_average_shapley()
+    entropy = solver.get_shapley_entropy()
+
+    assert Phi.shape == W.shape
+    assert Phi_tilde.shape == (W.shape[1],)
+    assert -math.log(1.0/W.shape[1])-entropy > 0
+
+    solver = MultilinearExtension()
+
+    W = np.random.uniform(0, 1, (10, 13))
+    solver.solve_game(W, q = 0.13)
+    Phi = solver.get_solution()
+    Phi_tilde = solver.get_average_shapley()
+    entropy = solver.get_shapley_entropy()
+
+    assert Phi.shape == W.shape
+    assert Phi_tilde.shape == (W.shape[1],)
+    assert -math.log(1.0/W.shape[1])-entropy > 0
+
+def test_exact_enumeration():
+    """
+    Testing the Exact Enumeration class.
     """
 
     solver = MultilinearExtension()
