@@ -31,15 +31,12 @@ class PermutationSampler(SolutionConcept):
             self._Phi[np.arange(W.shape[0]), pivotal] += 1.0
         self._Phi = self._Phi/self.permutations
 
-    def solve_game(self, W: np.ndarray, q: float) -> np.ndarray:
+    def solve_game(self, W: np.ndarray, q: float):
         r"""Solving the weigted voting game(s).
 
         Args:
             W (Numpy array): An :math:`n \times m` matrix of voting weights for the :math:`n` games with :math:`m` players.
             q (float): Quota in the games.
-
-        Return Types:
-            Phi (Numpy array): Approximate Shapley matrix of players in the game(s) with size :math:`n \times m`.
         """
         self._check_quota(q)
         self._setup(W)
@@ -47,4 +44,11 @@ class PermutationSampler(SolutionConcept):
         self._run_sanity_check(W, self._Phi)
         self._set_average_shapley()
         self._set_shapley_entropy()
+
+    def get_solution(self) -> np.ndarray:
+        r"""Returning the solution.
+
+        Return Types:
+            Phi (Numpy array): Approximate Shapley matrix of players in the game(s) with size :math:`n \times m`.
+        """
         return self._Phi
