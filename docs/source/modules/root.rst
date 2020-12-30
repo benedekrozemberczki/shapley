@@ -4,7 +4,7 @@ Shapley
 .. contents:: Contents
     :local:
 
-Eact Solution
+Exact Solution
 --------------------
 
 .. automodule:: shapley.solvers.exact_enumeration
