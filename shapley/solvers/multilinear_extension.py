@@ -19,6 +19,7 @@ class MultilinearExtension(SolutionConcept):
         upper = (np.zeros(W.shape) + q - mu)/var
         lower = (np.zeros(W.shape) + q - W - mu)/var
         self._Phi = norm.cdf(upper, 0, 1) - norm.cdf(lower, 0, 1)
+        print(self._Phi)
         self._Phi = self._Phi / np.sum(self._Phi, axis=1).reshape(-1, 1)
 
     def solve_game(self, W: np.ndarray, q: float):
