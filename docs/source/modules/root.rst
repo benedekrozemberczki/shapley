@@ -7,7 +7,7 @@ Shapley
 Eact Solution
 --------------------
 
-.. automodule:: shapley.solvers.exact_solution
+.. automodule:: shapley.solvers.exact_enumeration
     :members:
     :inherited-members:
 
