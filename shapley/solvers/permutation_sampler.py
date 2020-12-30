@@ -11,7 +11,7 @@ class PermutationSampler(SolutionConcept):
     <https://arxiv.org/abs/1306.4265>`_
 
     Args:
-        permutations (int): Number of permutations.
+        permutations (int): Number of permutations. The default is 1000.
     """    
     def __init__(self, permutations: int=1000):
         self.permutations = permutations
