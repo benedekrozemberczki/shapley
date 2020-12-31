@@ -3,7 +3,7 @@ import numpy as np
 from scipy.stats import norm
 from shapley.solution_concept import SolutionConcept
 
-class MultilinearExtension(SolutionConcept):
+class ExpectedMarginalContributions(SolutionConcept):
     r"""The multilinear extension approximation of the Shapley value in a weighted
     voting game using the technique proposed by Owen. For details see this paper: 
     `"Multilinear Extensions of Games."  <https://www.jstor.org/stable/2661445#metadata_info_tab_contents>`_
