@@ -32,7 +32,7 @@
 **Citing**
 
 
-If you find *Shapley* please consider adding the following citation:
+If you find *Shapley* useful in your research please consider adding the following citation:
 
 ```bibtex
 @misc{rozemberczki_shapley,
