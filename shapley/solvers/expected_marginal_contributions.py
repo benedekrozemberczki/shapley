@@ -1,5 +1,6 @@
 import random
 import numpy as np
+from numba import jit
 from scipy.stats import norm
 from shapley.solution_concept import SolutionConcept
 
