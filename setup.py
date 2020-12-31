@@ -2,7 +2,8 @@ from setuptools import find_packages, setup
 
 install_requires = ["numpy",
                     "scipy",
-                    "six"]
+                    "six",
+                    "numba"]
 
 
 setup_requires = ['pytest-runner']
