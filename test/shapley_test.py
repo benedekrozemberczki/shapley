@@ -48,7 +48,7 @@ def test_permutation_sampling():
 
 def test_multilinear_extension():
     """
-    Testing the Permutation Sampler class.
+    Testing the Multilinear Extension class.
     """
 
     solver = MultilinearExtension()
