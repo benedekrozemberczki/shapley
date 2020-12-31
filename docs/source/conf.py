@@ -20,7 +20,7 @@ autodoc_default_options = {
 }
 
 
-autodoc_mock_imports = ['shapley']
+autodoc_mock_imports = ['numba']
 
 source_suffix = '.rst'
 master_doc = 'index'
