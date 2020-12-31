@@ -48,7 +48,7 @@ class ExpectedMarginalContributions(SolutionConcept):
 
     def _approximate(self, W: np.ndarray, q: float):
         """Using the naive multilinear approximation method."""
-        for data_point in tqdm(range(game_count)):
+        for data_point in range(game_count):
             mu = float(np.mean(W[data_point,:]))
             var = float(np.var(W[data_point,:]))
             sigma_s = create_standard_deviation_vector(var, W.shape[1])
