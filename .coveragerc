@@ -1,0 +1,4 @@
+[report]
+exclude_lines =
+    def create_integrand_vectors
+    def create_standard_deviation_vector
