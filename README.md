@@ -49,7 +49,7 @@ If you find *Shapley* useful in your research please consider adding the followi
 
 **A simple example**
 
-Shapley makes solving voting games quite easy - see the accompanying [tutorial](https://shapley.readthedocs.io/en/latest/notes/introduction.html#applications). For example, this is all it takes to solve a large weighted voting game defined on the fly:
+Shapley makes solving voting games quite easy - see the accompanying [tutorial](https://shapley.readthedocs.io/en/latest/notes/introduction.html#applications). For example, this is all it takes to solve a weighted voting game with defined on the fly with permutation sampling:
 
 ```python
 import numpy as np
