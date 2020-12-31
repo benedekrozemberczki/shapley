@@ -3,6 +3,7 @@ import numpy as np
 from shapley import ExactEnumeration
 from shapley import PermutationSampler
 from shapley import MultilinearExtension
+from shapley import ExpectedMarginalContributions
 
 
 def test_permutation_sampling():
