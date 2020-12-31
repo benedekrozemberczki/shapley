@@ -63,7 +63,7 @@ from shapley import MonteCarloPermutations
 In detail, the following methods can be used.
 
 
-* **[Expected Marginal Contribution Approximation]()** from Fatima *et al.*: [A Linear Approximation Method for the Shapley Value](https://www.sciencedirect.com/science/article/pii/S0004370208000696)
+* **[Expected Marginal Contribution Approximation](https://shapley.readthedocs.io/en/latest/modules/root.html#shapley.solvers.expected_marginal_contributions.ExpectedMarginalContributions)** from Fatima *et al.*: [A Linear Approximation Method for the Shapley Value](https://www.sciencedirect.com/science/article/pii/S0004370208000696)
 
 * **[Multilinear Extension](https://shapley.readthedocs.io/en/latest/modules/root.html#shapley.solvers.multilinear_extension.MultilinearExtension)** from Owen: [Multilinear Extensions of Games](https://www.jstor.org/stable/2661445?seq=1#metadata_info_tab_contents)
 
