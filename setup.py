@@ -1,10 +1,15 @@
+import os
 from setuptools import find_packages, setup
+
+
+on_rtd = os.environ.get("READTHEDOCS") == "True"
 
 install_requires = ["numpy",
                     "scipy",
-                    "six",
-                    "numba"]
+                    "six"]
 
+if not on_rtd:
+    install_requires.append("numba")
 
 setup_requires = ['pytest-runner']
 
