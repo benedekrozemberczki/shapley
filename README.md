@@ -49,12 +49,19 @@ If you find *Shapley* please consider adding the following citation:
 
 **A simple example**
 
-Shapley makes solving voting games quite easy - see the accompanying [tutorial](https://shapley.readthedocs.io/en/latest/notes/introduction.html#applications). For example, this is all it takes to solve a weighted voting game defined on the fly:
+Shapley makes solving voting games quite easy - see the accompanying [tutorial](https://shapley.readthedocs.io/en/latest/notes/introduction.html#applications). For example, this is all it takes to solve a large weighted voting game defined on the fly:
 
 ```python
 import numpy as np
-from shapley import MonteCarloPermutations
+from shapley import PermutationSampler
 
+W = np.random.uniform(0, 1, (1, 100))
+W = W/W.sum()
+q = 0.5
+
+solver = PermutationSampler()
+solver.solve_game()
+shapley_values = solver.get_solution()
 ```
 --------------------------------------------------------------------------------
 
