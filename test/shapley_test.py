@@ -134,10 +134,10 @@ def test_expected_marginal_contributions():
     Testing the Expected Marginal Contributions class.
     """
 
-    solver = MultilinearExtension()
+    solver = ExpectedMarginalContributions()
 
     W = np.random.uniform(0, 1, (100, 97))
-    solver.solve_game(W, q = 0.25)
+    solver.solve_game(W, q = 15.5)
     Phi = solver.get_solution()
     Phi_tilde = solver.get_average_shapley()
     entropy = solver.get_shapley_entropy()
@@ -146,10 +146,10 @@ def test_expected_marginal_contributions():
     assert Phi_tilde.shape == (W.shape[1],)
     assert -math.log(1.0/W.shape[1])-entropy > 0
 
-    solver = MultilinearExtension()
+    solver = ExpectedMarginalContributions()
 
     W = np.random.uniform(0, 1, (100, 48))
-    solver.solve_game(W, q = 0.25)
+    solver.solve_game(W, q = 12.5)
     Phi = solver.get_solution()
     Phi_tilde = solver.get_average_shapley()
     entropy = solver.get_shapley_entropy()
@@ -158,10 +158,10 @@ def test_expected_marginal_contributions():
     assert Phi_tilde.shape == (W.shape[1],)
     assert -math.log(1.0/W.shape[1])-entropy > 0
 
-    solver = MultilinearExtension()
+    solver = ExpectedMarginalContributions(epsilon=10**-5)
 
     W = np.random.uniform(0, 1, (10, 13))
-    solver.solve_game(W, q = 0.13)
+    solver.solve_game(W, q = 3.0)
     Phi = solver.get_solution()
     Phi_tilde = solver.get_average_shapley()
     entropy = solver.get_shapley_entropy()
