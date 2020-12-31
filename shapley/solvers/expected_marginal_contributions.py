@@ -4,6 +4,35 @@ from numba import jit
 from scipy.stats import norm
 from shapley.solution_concept import SolutionConcept
 
+
+@jit
+def create_integrand_vectors(player_count, q, w):
+    """
+    Creating the vector of standard deviations and integrand limits.
+    :param player_count (int): Number of players in the game.
+    :param q (float): Quota to win the game.
+    :param w (float): Weight of the player in the game.
+    
+    :return a_s: Vector of lower integrand limits.
+    :return b_s: Vector of upper integrand limits.
+    """
+    a_s = (q-w)/np.linspace(1, player_count-1, player_count-1)
+    b_s = (q-10**-20)/np.linspace(1, player_count-1, player_count-1)
+    return a_s, b_s
+
+
+@jit
+def create_standard_deviation_vector(var, player_count):
+    """
+    Creating the vector of standard deviations and integrand limits.
+    :param var (float): Variance of the weights in the game.
+    :param player_count (int): Number of players in the game.
+    
+    :return sigma_s: Vector of standard deviations for the game.
+    """
+    sigma_s = np.power(var/np.linspace(1, player_count-1, player_count-1), 0.5)
+    return sigma_s
+
 class ExpectedMarginalContributions(SolutionConcept):
     r"""The multilinear extension approximation of the Shapley value in a weighted
     voting game using the technique proposed by Owen. For details see this paper: 
