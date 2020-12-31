@@ -21,3 +21,7 @@ Approximate Solutions
 .. automodule:: shapley.solvers.multilinear_extension
     :members:
     :inherited-members:
+
+.. automodule:: shapley.solvers.expected_marginal_contributions
+    :members:
+    :inherited-members:
