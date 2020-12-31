@@ -3,3 +3,5 @@ sphinx
 sphinx_rtd_theme
 scipy
 six
+nbsphinx
+nbsphinx_link
