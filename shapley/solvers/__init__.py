@@ -1,3 +1,4 @@
 from .exact_enumeration import ExactEnumeration
 from .permutation_sampler import PermutationSampler
 from .multilinear_extension import MultilinearExtension
+from .expected_marginal_contributions import ExpectedMarginalContributions
