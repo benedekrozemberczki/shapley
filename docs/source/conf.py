@@ -13,6 +13,15 @@ extensions = [
     'sphinx.ext.githubpages',
 ]
 
+autodoc_default_options = {
+    'member-order': 'bysource',
+    'special-members': '__init__',
+    'undoc-members': True,
+}
+
+
+autodoc_mock_imports = ['shapley']
+
 source_suffix = '.rst'
 master_doc = 'index'
 
