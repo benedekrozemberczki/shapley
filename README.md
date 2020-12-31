@@ -55,12 +55,12 @@ Shapley makes solving voting games quite easy - see the accompanying [tutorial](
 import numpy as np
 from shapley import PermutationSampler
 
-W = np.random.uniform(0, 1, (1, 100))
+W = np.random.uniform(0, 1, (1, 7))
 W = W/W.sum()
 q = 0.5
 
 solver = PermutationSampler()
-solver.solve_game()
+solver.solve_game(W, q)
 shapley_values = solver.get_solution()
 ```
 --------------------------------------------------------------------------------
