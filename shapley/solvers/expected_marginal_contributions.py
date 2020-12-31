@@ -8,6 +8,10 @@ class ExpectedMarginalContributions(SolutionConcept):
     voting game using the technique proposed by Owen. For details see this paper: 
     `"Multilinear Extensions of Games."  <https://www.jstor.org/stable/2661445#metadata_info_tab_contents>`_
     """
+
+    def __init__(self, epsilon: float=10**-8):
+        self.epsilon = epsilon
+
     def _setup(self, W: np.ndarray):
         """Creating an empty Shapley value matrix."""
         self._Phi = np.zeros(W.shape)
