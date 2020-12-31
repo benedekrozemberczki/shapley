@@ -25,3 +25,4 @@ Approximate Solutions
 .. automodule:: shapley.solvers.expected_marginal_contributions
     :members:
     :inherited-members:
+    :exclude-members: create_integrand_vectors, create_standard_deviation_vector
