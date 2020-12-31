@@ -106,7 +106,7 @@ $ python setup.py test
 
 ```
 $ cd examples
-$ python permutation_example.py
+$ python permutation_sampler_example.py
 ```
 
 --------------------------------------------------------------------------------
