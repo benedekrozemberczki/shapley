@@ -131,7 +131,7 @@ def test_exact_enumeration():
 
 def test_expected_marginal_contributions():
     """
-    Testing the Multilinear Extension class.
+    Testing the Expected Marginal Contributions class.
     """
 
     solver = MultilinearExtension()
