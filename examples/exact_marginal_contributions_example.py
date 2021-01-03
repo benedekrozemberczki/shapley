@@ -1,4 +1,4 @@
-"""Multilinear Extension Example"""
+"""Expected Marginal Contributions Example"""
 
 import numpy as np
 from shapley import ExpectedMarginalContributions
