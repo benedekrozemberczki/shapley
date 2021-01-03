@@ -37,7 +37,7 @@ setup(
   packages = find_packages(),
   version = "1.0.0",
   license = "MIT",
-  description = "A general purpose library for quantify the value of classifiers in a machine learning ensemble.",
+  description = "A general purpose library to quantify the value of classifiers in a machine learning ensemble.",
   author = "Benedek Rozemberczki",
   author_email = "benedek.rozemberczki@gmail.com",
   url = "https://github.com/benedekrozemberczki/shapley",
