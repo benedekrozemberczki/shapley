@@ -36,7 +36,8 @@ def create_standard_deviation_vector(var, player_count):
 class ExpectedMarginalContributions(SolutionConcept):
     r"""The expected marginal contributions approximation of the Shapley value in a weighted
     voting game using the technique proposed by Fatima. For details see this paper: 
-    `"Multilinear Extensions of Games."  <https://www.jstor.org/stable/2661445#metadata_info_tab_contents>`_
+    `"A Linear Approximation Method for the Shapley Value."
+     <https://www.sciencedirect.com/science/article/pii/S0004370208000696>`_
     """
 
     def __init__(self, epsilon: float=10**-8):
