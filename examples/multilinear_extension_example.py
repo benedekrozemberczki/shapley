@@ -3,9 +3,9 @@
 import numpy as np
 from shapley import MultilinearExtension
 
-W = np.random.uniform(0, 1, (1, 7))
+W = np.random.uniform(0, 1, (20, 20))
 W = W/W.sum()
-q = 0.5
+q = 0.35
 
 solver = MultilinearExtension()
 solver.solve_game(W, q)
