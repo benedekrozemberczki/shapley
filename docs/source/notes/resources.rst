@@ -4,8 +4,8 @@ External resources
 General Game Theory
 --------------------
 
-Weighted Voting Games
---------------------
+Shapley Value Approximations
+----------------------------
 
 * Shaheen Fatimaa, Michael Wooldridge, Nicholas Jennings: **A Linear Approximation Method for the Shapley Value** `Paper <https://www.sciencedirect.com/science/article/pii/S0004370208000696>`_
 
