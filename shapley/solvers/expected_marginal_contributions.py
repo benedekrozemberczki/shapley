@@ -34,8 +34,8 @@ def create_standard_deviation_vector(var, player_count):
     return sigma_s
 
 class ExpectedMarginalContributions(SolutionConcept):
-    r"""The multilinear extension approximation of the Shapley value in a weighted
-    voting game using the technique proposed by Owen. For details see this paper: 
+    r"""The expected marginal contributions approximation of the Shapley value in a weighted
+    voting game using the technique proposed by Fatima. For details see this paper: 
     `"Multilinear Extensions of Games."  <https://www.jstor.org/stable/2661445#metadata_info_tab_contents>`_
     """
 
