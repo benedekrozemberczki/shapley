@@ -13,10 +13,9 @@ Shapley Value Approximations
 
 * Sasan Maleki, Long Tran-Thanh, Greg Hines, Talal Rahwan, Alex Rogers: **Bounding the Estimation Error of Sampling-based Shapley Value Approximation** `Paper <https://arxiv.org/abs/1306.4265>`_
 
-* Alessandro Epasto, Silvio Lattanzi, Renato Paes Leme: **Ego-splitting Framework: from Non-Overlapping to Overlapping Clusters** `Paper <https://www.eecs.yorku.ca/course_archive/2017-18/F/6412/reading/kdd17p145.pdf>`_, `Slides <https://epasto.org/papers/kdd2017-Slides.pdf>`_, `Video <https://www.youtube.com/watch?v=xMGZo-F_jss>`_, `Code <https://github.com/benedekrozemberczki/EgoSplitting>`_
+* Lloyd Shapley: **A Value for N-Person Games** `Paper <https://www.rand.org/pubs/papers/P0295.html>`_
 
 
 Shapley Value in Machine Learning
 ----------------------------------
 
-* Alessandro Epasto, Silvio Lattanzi, Renato Paes Leme: **Ego-splitting Framework: from Non-Overlapping to Overlapping Clusters** `Paper <https://www.eecs.yorku.ca/course_archive/2017-18/F/6412/reading/kdd17p145.pdf>`_, `Slides <https://epasto.org/papers/kdd2017-Slides.pdf>`_, `Video <https://www.youtube.com/watch?v=xMGZo-F_jss>`_, `Code <https://github.com/benedekrozemberczki/EgoSplitting>`_
