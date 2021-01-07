@@ -25,10 +25,9 @@
 [![Arxiv][arxiv-image]][arxiv-url]
 
 **[Documentation](https://shapley.readthedocs.io)** | **[External Resources](https://shapley.readthedocs.io/en/latest/notes/resources.html)**
+| **[Research Paper](https://arxiv.org/abs/2101.02153)**
 
 *Shapley* is a Python library for evaluating binary classifiers in a machine learning ensemble.
-
-Please look at the relevant **[Research Paper](https://arxiv.org/abs/2101.02153)**.
 
 <p align="justify">The library consists of various methods to compute (approximate) the Shapley value of players (models) in weighted voting games (ensemble games). We covered widely know approximation methods from well known economics and computer science research papers. There are also functionalities to identify the heterogeneity of the player pool. In addition, the framework comes with a detailed documentation, 100% test coverage and illustrative toy examples.</p>
 
