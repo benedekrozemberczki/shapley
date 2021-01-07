@@ -40,12 +40,12 @@ If you find *Shapley* useful in your research please consider adding the followi
 
 ```bibtex
 @misc{rozemberczki2021shapley,
-      title={{The Shapley Value of Classifiers in Ensemble Games}}, 
-      author={Benedek Rozemberczki and Rik Sarkar},
-      year={2021},
-      eprint={2101.02153},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
+      title = {{The Shapley Value of Classifiers in Ensemble Games}}, 
+      author = {Benedek Rozemberczki and Rik Sarkar},
+      year = {2021},
+      eprint = {2101.02153},
+      archivePrefix = {arXiv},
+      primaryClass = {cs.LG}
 }
 ```
 
