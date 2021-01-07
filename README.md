@@ -35,13 +35,13 @@
 If you find *Shapley* useful in your research please consider adding the following citation:
 
 ```bibtex
-@misc{rozemberczki_shapley,
-      author = {Benedek, Rozemberczki and Rik, Sarkar},
-      title = {{The Shapley Value of Classifiers in Ensemble Games}},
-      year = {2020},
-      publisher = {GitHub},
-      journal = {GitHub repository},
-      howpublished = {\url{https://github.com/benedekrozemberczki/shapley}},
+@misc{rozemberczki2021shapley,
+      title={{The Shapley Value of Classifiers in Ensemble Games}}, 
+      author={Benedek Rozemberczki and Rik Sarkar},
+      year={2021},
+      eprint={2101.02153},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
 }
 ```
 
