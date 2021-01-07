@@ -8,6 +8,8 @@
 [docs-url]: https://shapley.readthedocs.io/en/latest/?badge=latest
 [coverage-image]: https://codecov.io/gh/benedekrozemberczki/shapley/branch/master/graph/badge.svg
 [coverage-url]: https://codecov.io/github/benedekrozemberczki/shapley?branch=master
+[arxiv-image]: https://codecov.io/gh/benedekrozemberczki/shapley/branch/master/graph/badge.svg
+[arxiv-url]: https://codecov.io/github/benedekrozemberczki/shapley?branch=master
 
 <p align="center">
   <img width="90%" src="https://github.com/benedekrozemberczki/shapley/raw/master/shapley.jpg?sanitize=true" />
