@@ -22,7 +22,7 @@
 [![Repo size][size-image]][size-url]
 [![Code Coverage][coverage-image]][coverage-url]
 [![Build Status][build-image]][build-url]
-[![Arxiv][https://img.shields.io/badge/ArXiv-2101.02153-orange.svg?color=blue&style=plastic]][https://arxiv.org/abs/2101.02153]
+[![Arxiv][arxiv-image]][arxiv-url]
 
 **[Documentation](https://shapley.readthedocs.io)** | **[External Resources](https://shapley.readthedocs.io/en/latest/notes/resources.html)**
 
