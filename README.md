@@ -18,6 +18,7 @@
 [![PyPI Version][pypi-image]][pypi-url]
 [![Docs Status][docs-image]][docs-url]
 [![Repo size][size-image]][size-url]
+[![Arxiv](https://img.shields.io/badge/ArXiv-2003.04819-orange.svg?color=blue&style=plastic)](https://arxiv.org/abs/2003.04819)
 [![Code Coverage][coverage-image]][coverage-url]
 [![Build Status][build-image]][build-url]
 
