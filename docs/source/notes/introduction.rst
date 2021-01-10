@@ -21,3 +21,14 @@ If you find *Shapley* useful in your research, please consider citing the follow
            primaryClass = {cs.LG}
     }
 
+Overview
+=======================
+--------------------------------------------------------------------------------
+
+We shortly overview the fundamental concepts and features of Shapley through simple examples. These are the following:
+
+.. contents::
+    :local:
+
+Standardized dataset ingestion
+------------------------------
