@@ -38,3 +38,16 @@ Shapley assumes that the weights in the game(s) are provided by a ``Numpy float 
 Standardized output generation
 ------------------------------
 The Shapley values are returned as a ``Numpy float array`` which has 2 dimensions - rows represent the games and columns are players. A given value in the ``Numpy array`` is the Shapley value of a player in a game. 
+
+API driven design
+-----------------
+
+
+Exact solution
+-----------------
+
+Approximate solution
+-----------------
+
+
+
