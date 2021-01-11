@@ -32,3 +32,9 @@ We shortly overview the fundamental concepts and features of Shapley through sim
 
 Standardized dataset ingestion
 ------------------------------
+
+Shapley assumes that the weights in the game(s) are provided by a Numpy float array. This array is 2 dimensional, the first dimension corresponds to the games and the second one corresponds to the players. The quota for the games is set universally by a float value. We assume that all of the games can be won by a certain coalition. 
+
+Standardized output generation
+------------------------------
+The Shapley values are returned as a Numpy float array which has 2 dimensions - rows represent the games and columns are players. A given value in the array is the Shapley value of a player in a game. 
