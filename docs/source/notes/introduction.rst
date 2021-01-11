@@ -60,3 +60,10 @@ We define a quota value and a weight matrix so we can solve a single game with p
     W = W/W.sum()
     q = 0.5
 
+We solve the game by using the ``solve_game`` method which uses the weights and the quota as input. The approximate Shapley values are returned by the ``get_solution`` method.
+
+.. code-block:: python
+    
+    solver.solve_game(W, q)
+    shapley_values = solver.get_solution()
+
