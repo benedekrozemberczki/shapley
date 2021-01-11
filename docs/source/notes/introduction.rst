@@ -42,7 +42,13 @@ The Shapley values are returned as a ``Numpy float array`` which has 2 dimension
 API driven design
 -----------------
 
-Shapley uses and API driven design which involves a  ``SolutionConcept`` meta class. All of the Shapley value calculation techniques inherit from this class the methods used to verify the input and output. Methods used to estimate the average Shapley values and the Shapley entropy are also inherited from this meta class. Shapley value calculation ``solvers`` are created by parametrizing the appropriate constructor. Just like in the example below where we define a ``Permutation Sampler``.
+Shapley uses and API driven design which involves a  ``SolutionConcept`` meta class. All of the Shapley value calculation techniques inherit from this class the methods used to verify the input and output. Methods used to estimate the average Shapley values and the Shapley entropy are also inherited from this meta class. Shapley value calculation ``solvers`` are created by parametrizing the appropriate constructor. Just like in the example below where we define a ``Monte Carlo Permutation Sampler``.
+
+.. code-block:: python
+
+    from shapley import PermutationSampler
+
+    solver = PermutationSampler()
 
 Exact solution
 -----------------
