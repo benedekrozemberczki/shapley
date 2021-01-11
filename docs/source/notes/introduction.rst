@@ -50,11 +50,11 @@ Shapley uses and API driven design which involves a  ``SolutionConcept`` meta cl
 
     solver = PermutationSampler()
 
-Exact solution
------------------
+We define a quota value and a weight matrix so we can solve a single game with permutation sampling. It is worth noting that this game is extremely large - it has 70 players.
 
-Approximate solution
------------------
+.. code-block:: python
 
+    from shapley import PermutationSampler
 
+    solver = PermutationSampler()
 
