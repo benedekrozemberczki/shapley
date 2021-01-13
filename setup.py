@@ -10,7 +10,7 @@ install_requires = ["numpy",
 if not on_rtd:
     install_requires.append("numba")
 
-setup_requires = ['pytest-runner']
+setup_requires = ["pytest-runner"]
 
 
 tests_require = ["pytest",
