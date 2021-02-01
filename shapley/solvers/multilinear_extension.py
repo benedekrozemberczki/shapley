@@ -14,8 +14,8 @@ class MultilinearExtension(SolutionConcept):
 
     def _approximate(self, W: np.ndarray, q: float):
         """Using the naive multilinear approximation method."""
-        mu = np.tile(np.sum(W, axis=1).reshape(-1, 1), W.shape[1])-W
-        std = np.tile(np.sum(np.square(W), axis=1).reshape(-1, 1), W.shape[1])-np.square(W)
+        mu = np.tile(np.sum(W, axis=1).reshape(-1, 1), W.shape[1]) - W
+        std = np.tile(np.sum(np.square(W), axis=1).reshape(-1, 1), W.shape[1]) - np.square(W)
         upper = (np.zeros(W.shape) + q - mu)/std
         lower = (np.zeros(W.shape) + q - W - mu)/std
         self._Phi = norm.cdf(upper, 0, 1) - norm.cdf(lower, 0, 1)
