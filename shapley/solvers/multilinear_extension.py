@@ -21,7 +21,7 @@ class MultilinearExtension(SolutionConcept):
         self._Phi = norm.cdf(upper, 0, 1) - norm.cdf(lower, 0, 1)
         print(upper,lower)
         self._Phi = self._Phi / np.sum(self._Phi, axis=1).reshape(-1, 1)
-        print(self._Phi)
+
     def solve_game(self, W: np.ndarray, q: float):
         r"""Solving the weigted voting game(s).
 
