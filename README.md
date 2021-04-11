@@ -82,7 +82,7 @@ In detail, the following methods can be used.
 
 * **[Exact Enumeration](https://shapley.readthedocs.io/en/latest/modules/root.html#shapley.solvers.exact_enumeration.ExactEnumeration)** from Shapley: [A Value for N-Person Games](https://www.rand.org/pubs/papers/P0295.html)
 
---------------------------------------------------------------------------------
+------------------------------------------------------------------------------
 
 
 Head over to our [documentation](https://shapley.readthedocs.io) to find out more about installation, creation of datasets and a full list of implemented methods and available datasets.
@@ -91,7 +91,7 @@ For a quick start, check out the [examples](https://github.com/benedekrozembercz
 If you notice anything unexpected, please open an [issue](https://benedekrozemberczki/shapley/issues). If you are missing a specific method, feel free to open a [feature request](https://github.com/benedekrozemberczki/shapley/issues).
 
 
---------------------------------------------------------------------------------
+------------------------------------------------------------------------------
 
 **Installation**
 
@@ -104,7 +104,7 @@ $ pip install shapley
 ```
 $ python setup.py test
 ```
---------------------------------------------------------------------------------
+------------------------------------------------------------------------------
 
 **Running examples**
 
@@ -113,7 +113,7 @@ $ cd examples
 $ python permutation_sampler_example.py
 ```
 
---------------------------------------------------------------------------------
+------------------------------------------------------------------------------
 
 **License**
 
