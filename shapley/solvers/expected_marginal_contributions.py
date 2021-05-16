@@ -14,7 +14,7 @@ def create_integrand_vectors(player_count, q, w):
     :param player_count (int): Number of players in the game.
     :param q (float): Quota to win the game.
     :param w (float): Weight of the player in the game.
-    
+
     :return a_s: Vector of lower integrand limits.
     :return b_s: Vector of upper integrand limits.
     """
@@ -29,7 +29,7 @@ def create_standard_deviation_vector(var, player_count):
     Creating the vector of standard deviations and integrand limits.
     :param var (float): Variance of the weights in the game.
     :param player_count (int): Number of players in the game.
-    
+
     :return sigma_s: Vector of standard deviations for the game.
     """
     sigma_s = np.power(var/np.linspace(1, player_count-1, player_count-1), 0.5)
@@ -37,7 +37,7 @@ def create_standard_deviation_vector(var, player_count):
 
 class ExpectedMarginalContributions(SolutionConcept):
     r"""The expected marginal contributions approximation of the Shapley value in a weighted
-    voting game using the technique proposed by Fatima. For details see this paper: 
+    voting game using the technique proposed by Fatima. For details see this paper:
     `"A Linear Approximation Method for the Shapley Value."
      <https://www.sciencedirect.com/science/article/pii/S0004370208000696>`_
     """
