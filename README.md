@@ -90,8 +90,7 @@ For a quick start, check out the [examples](https://github.com/benedekrozembercz
 
 If you notice anything unexpected, please open an [issue](https://benedekrozemberczki/shapley/issues). If you are missing a specific method, feel free to open a [feature request](https://github.com/benedekrozemberczki/shapley/issues).
 
-
-------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
 
 **Installation**
 
