@@ -1,3 +1,5 @@
+"""Permutation Sampling Based Shapley Value Approximation."""
+
 import random
 import numpy as np
 from shapley.solution_concept import SolutionConcept
