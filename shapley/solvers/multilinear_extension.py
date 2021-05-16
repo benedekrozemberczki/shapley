@@ -1,3 +1,5 @@
+"""Multilinear Extension Based Shapley Value Approximation."""
+
 import random
 import numpy as np
 from scipy.stats import norm
