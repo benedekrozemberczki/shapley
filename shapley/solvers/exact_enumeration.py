@@ -6,7 +6,7 @@ from shapley.solution_concept import SolutionConcept
 
 class ExactEnumeration(SolutionConcept):
     r"""Exact enumeration of all permutations and finding the pivotal voters. It
-    is designed with a generator of the permutations. For details see this paper: 
+    is designed with a generator of the permutations. For details see this paper:
     `"A Value for N-Person Games." <https://www.rand.org/pubs/papers/P0295.html>`_
     """
 
