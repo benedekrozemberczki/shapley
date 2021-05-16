@@ -1,3 +1,5 @@
+"""Exact Enumeration Based Shapley Value."""
+
 import itertools
 import numpy as np
 from shapley.solution_concept import SolutionConcept
