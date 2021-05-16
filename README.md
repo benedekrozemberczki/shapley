@@ -82,7 +82,7 @@ In detail, the following methods can be used.
 
 * **[Exact Enumeration](https://shapley.readthedocs.io/en/latest/modules/root.html#shapley.solvers.exact_enumeration.ExactEnumeration)** from Shapley: [A Value for N-Person Games](https://www.rand.org/pubs/papers/P0295.html)
 
-----------------------------------------------------------------------------
+----------------------------------------------------------------------------------
 
 
 Head over to our [documentation](https://shapley.readthedocs.io) to find out more about installation, creation of datasets and a full list of implemented methods and available datasets.
