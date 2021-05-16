@@ -49,7 +49,7 @@ If you find *Shapley* useful in your research please consider adding the followi
 }
 ```
 
-------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
 
 **A simple example**
 
@@ -67,7 +67,7 @@ solver = PermutationSampler()
 solver.solve_game(W, q)
 shapley_values = solver.get_solution()
 ```
---------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
 
 **Methods Included**
 
