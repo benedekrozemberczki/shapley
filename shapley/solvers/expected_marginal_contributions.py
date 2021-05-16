@@ -1,3 +1,5 @@
+"""Expected Marginal Contributions Based Shapley Value Approximation."""
+
 import random
 import numpy as np
 from numba import jit
