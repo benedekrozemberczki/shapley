@@ -1,3 +1,5 @@
+"""Generic shape and entropy tests."""
+
 import math
 import numpy as np
 from shapley import ExactEnumeration
