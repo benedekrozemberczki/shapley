@@ -15,8 +15,6 @@
   <img width="90%" src="https://github.com/benedekrozemberczki/shapley/raw/master/shapley.jpg?sanitize=true" />
 </p>
 
-----------------------------------------------------------------------------------
-
 [![PyPI Version][pypi-image]][pypi-url]
 [![Docs Status][docs-image]][docs-url]
 [![Repo size][size-image]][size-url]
