@@ -115,6 +115,3 @@ $ python permutation_sampler_example.py
 **License**
 
 - [MIT License](https://github.com/benedekrozemberczki/shapley/blob/master/LICENSE)
-
-
-----------------------------------------------------------------------------------
