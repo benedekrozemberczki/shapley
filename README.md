@@ -37,13 +37,11 @@ The library consists of various methods to compute (approximate) the Shapley val
 If you find *Shapley* useful in your research please consider adding the following citation:
 
 ```bibtex
-@misc{rozemberczki2021shapley,
+@inproceedings{rozemberczki2021shapley,
       title = {{The Shapley Value of Classifiers in Ensemble Games}}, 
       author = {Benedek Rozemberczki and Rik Sarkar},
       year = {2021},
-      eprint = {2101.02153},
-      archivePrefix = {arXiv},
-      primaryClass = {cs.LG}
+      booktitle={{Proceedings of the 30th ACM International Conference on Information and Knowledge Management}},
 }
 ```
 
