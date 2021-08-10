@@ -1,9 +1,6 @@
 External resources
 ==================
 
-General Game Theory
---------------------
-
 Shapley Value Approximations
 ----------------------------
 
@@ -14,8 +11,3 @@ Shapley Value Approximations
 * Sasan Maleki, Long Tran-Thanh, Greg Hines, Talal Rahwan, Alex Rogers: **Bounding the Estimation Error of Sampling-based Shapley Value Approximation** `Paper <https://arxiv.org/abs/1306.4265>`_
 
 * Lloyd Shapley: **A Value for N-Person Games** `Paper <https://www.rand.org/pubs/papers/P0295.html>`_
-
-
-Shapley Value in Machine Learning
-----------------------------------
-
