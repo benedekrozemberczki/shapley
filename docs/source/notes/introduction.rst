@@ -12,14 +12,13 @@ If you find *Shapley* useful in your research, please consider citing the follow
 
 .. code-block:: latex
 
-    >@misc{rozemberczki2021shapley,
-           title = {{The Shapley Value of Classifiers in Ensemble Games}}, 
-           author = {Benedek Rozemberczki and Rik Sarkar},
-           year = {2021},
-           eprint = {2101.02153},
-           archivePrefix = {arXiv},
-           primaryClass = {cs.LG}
+    >@inproceedings{rozemberczki2021shapley,
+                    title = {{The Shapley Value of Classifiers in Ensemble Games}}, 
+                    author = {Benedek Rozemberczki and Rik Sarkar},
+                    year = {2021},
+                    booktitle={Proceedings of the 30th ACM International Conference on Information and Knowledge Management},
     }
+
 
 Overview
 =======================
