@@ -4,6 +4,7 @@ import itertools
 import numpy as np
 from shapley.solution_concept import SolutionConcept
 
+
 class ExactEnumeration(SolutionConcept):
     r"""Exact enumeration of all permutations and finding the pivotal voters. It
     is designed with a generator of the permutations. For details see this paper:
@@ -23,10 +24,9 @@ class ExactEnumeration(SolutionConcept):
             indices = list(perm)
             W_perm = W[:, indices]
             cum_sum = np.cumsum(W_perm, axis=1)
-            pivotal = np.array(indices)[np.argmax(cum_sum>q, axis=1)]
+            pivotal = np.array(indices)[np.argmax(cum_sum > q, axis=1)]
             self._Phi[np.arange(W.shape[0]), pivotal] += 1.0
-        self._Phi = self._Phi/self.permutations
-
+        self._Phi = self._Phi / self.permutations
 
     def solve_game(self, W: np.ndarray, q: float):
         r"""Solving the weigted voting game(s).

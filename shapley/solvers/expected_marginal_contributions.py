@@ -17,8 +17,8 @@ def create_integrand_vectors(player_count, q, w):
     :return a_s: Vector of lower integrand limits.
     :return b_s: Vector of upper integrand limits.
     """
-    a_s = (q-w)/np.linspace(1, player_count-1, player_count-1)
-    b_s = (q-10**-20)/np.linspace(1, player_count-1, player_count-1)
+    a_s = (q - w) / np.linspace(1, player_count - 1, player_count - 1)
+    b_s = (q - 10 ** -20) / np.linspace(1, player_count - 1, player_count - 1)
     return a_s, b_s
 
 
@@ -31,8 +31,9 @@ def create_standard_deviation_vector(var, player_count):
 
     :return sigma_s: Vector of standard deviations for the game.
     """
-    sigma_s = np.power(var/np.linspace(1, player_count-1, player_count-1), 0.5)
+    sigma_s = np.power(var / np.linspace(1, player_count - 1, player_count - 1), 0.5)
     return sigma_s
+
 
 class ExpectedMarginalContributions(SolutionConcept):
     r"""The expected marginal contributions approximation of the Shapley value in a weighted
@@ -41,7 +42,7 @@ class ExpectedMarginalContributions(SolutionConcept):
      <https://www.sciencedirect.com/science/article/pii/S0004370208000696>`_
     """
 
-    def __init__(self, epsilon: float=10**-8):
+    def __init__(self, epsilon: float = 10 ** -8):
         self.epsilon = epsilon
 
     def _setup(self, W: np.ndarray):
@@ -51,13 +52,15 @@ class ExpectedMarginalContributions(SolutionConcept):
     def _approximate(self, W: np.ndarray, q: float):
         """Using the naive multilinear approximation method."""
         for data_point in range(W.shape[0]):
-            mu = float(np.mean(W[data_point,:]))
-            var = float(np.var(W[data_point,:]))
+            mu = float(np.mean(W[data_point, :]))
+            var = float(np.var(W[data_point, :]))
             sigma_s = create_standard_deviation_vector(var, W.shape[1])
             for player_index in range(W.shape[1]):
                 w = W[data_point, player_index]
                 a_s, b_s = create_integrand_vectors(W.shape[1], q, w)
-                shap_in_game = norm.cdf(b_s, loc=mu, scale=sigma_s)-norm.cdf(a_s, loc=mu, scale=sigma_s)
+                shap_in_game = norm.cdf(b_s, loc=mu, scale=sigma_s) - norm.cdf(
+                    a_s, loc=mu, scale=sigma_s
+                )
                 self._Phi[data_point, player_index] += np.sum(shap_in_game)
 
         self._Phi = self._Phi / np.sum(self._Phi, axis=1).reshape(-1, 1)

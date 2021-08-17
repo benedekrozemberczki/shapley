@@ -2,6 +2,7 @@
 
 import numpy as np
 
+
 class SolutionConcept(object):
     """Solution Concept base class with constructor and public methods."""
 
@@ -32,7 +33,7 @@ class SolutionConcept(object):
 
     def _set_shapley_entropy(self):
         """Calculating the Shapley entropy score."""
-        self._shapley_entropy = -np.sum(self._Phi_tilde*np.log(self._Phi_tilde))
+        self._shapley_entropy = -np.sum(self._Phi_tilde * np.log(self._Phi_tilde))
 
     def get_average_shapley(self) -> np.ndarray:
         """Getting the average Shapley value scores."""
