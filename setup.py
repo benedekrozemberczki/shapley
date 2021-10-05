@@ -28,6 +28,8 @@ keywords = [
     "machine-learning",
     "deep-learning",
     "deeplearning",
+    "game-theory",
+    "cooperative-game"
 ]
 
 
