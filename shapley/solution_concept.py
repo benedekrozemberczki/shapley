@@ -20,7 +20,7 @@ class SolutionConcept(object):
 
     def _verify_distribution(self, Phi: np.ndarray):
         """Verify distribution hypothesis."""
-        assert np.sum(Phi) - Phi.shape[0] < 0.001
+        assert (np.sum(Phi) - Phi.shape[0]) < 0.0001
 
     def _run_sanity_check(self, W: np.ndarray, Phi: np.ndarray):
         """Checking the basic assumptions about the Shapley values."""
