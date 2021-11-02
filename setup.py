@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 
 on_rtd = os.environ.get("READTHEDOCS") == "True"
 
-install_requires = ["numpy", "scipy", "six"]
+install_requires = ["numpy<1.21", "scipy", "six"]
 
 if not on_rtd:
     install_requires.append("numba")
