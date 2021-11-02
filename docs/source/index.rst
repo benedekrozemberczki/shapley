@@ -12,6 +12,7 @@ Shapley Documentation
                     author = {Benedek Rozemberczki and Rik Sarkar},
                     year = {2021},
                     booktitle={Proceedings of the 30th ACM International Conference on Information and Knowledge Management},
+                    pages = {1558–1567},
     }
 
 
