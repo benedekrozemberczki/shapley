@@ -1,11 +1,12 @@
+
 name: CI
 
 on:
 
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
   workflow_dispatch:
 
@@ -25,11 +26,10 @@ jobs:
       - run: which python
       - name: Run installation.
         run: |
-          conda install -y scipy
-          pip install codecov
-          pip install pytest
-          python setup.py install
-          pip install -e .[test]
+         conda install -y scipy
+         pip install codecov
+         pip install pytest
+         python setup.py install
       - name: Install main package
         run: |
           pip install -e .[test]
