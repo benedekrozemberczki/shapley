@@ -31,12 +31,12 @@ jobs:
           python setup.py install
       - name: Run test-suite
         run: |
-          python setup.py test
+          python -m pytest
       - name: Generate coverage report
         if: success()
         run: |
           pip install coverage
-          coverage run -m python setup.py test
+          coverage run -m pytest
           coverage xml
       - name: Upload coverage report to codecov
         uses: codecov/codecov-action@v1
