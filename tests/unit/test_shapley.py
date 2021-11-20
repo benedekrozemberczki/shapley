@@ -11,7 +11,7 @@ from shapley import MultilinearExtension
 from shapley import ExpectedMarginalContributions
 
 
-class TestErdosRenyiDataset(unittest.TestCase):
+class TestShapley(unittest.TestCase):
 
     def test_permutation_sampling(self):
         """
