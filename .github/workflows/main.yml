@@ -30,12 +30,16 @@ jobs:
           pip install pytest
           python setup.py install
           pip install -e .[test]
+      - name: Install main package
+        run: |
+          pip install -e .[test]
       - name: Run test-suite
         run: |
           python -m pytest
       - name: Generate coverage report
         if: success()
         run: |
+          pip install coverage
           coverage run -m pytest
           coverage xml
       - name: Upload coverage report to codecov
