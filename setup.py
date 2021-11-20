@@ -10,7 +10,9 @@ if not on_rtd:
 
 setup_requires = ["pytest-runner"]
 
-tests_require = ["pytest", "pytest-cov", "mock"]
+tests_require = ["pytest", "pytest-cov", "mock", "unittest"]
+
+
 
 keywords = [
     "shapley",
