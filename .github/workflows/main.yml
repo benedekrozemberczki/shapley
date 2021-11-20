@@ -26,8 +26,9 @@ jobs:
       - name: Run installation.
         run: |
           conda install -y scipy
+          pip install codecov
           pip install pytest
-          pip install -e .[test]
+          python setup.py install
       - name: Run test-suite
         run: |
           python -m pytest
