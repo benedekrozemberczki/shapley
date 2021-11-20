@@ -29,6 +29,7 @@ jobs:
           pip install codecov
           pip install pytest
           python setup.py install
+          pip install -e .[test]
       - name: Run test-suite
         run: |
           python -m pytest
