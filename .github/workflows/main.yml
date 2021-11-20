@@ -30,7 +30,6 @@ jobs:
          pip install codecov
          pip install pytest
          pip install pytest-cov
-         pip install cov cov-report
          python setup.py install
       - name: Install main package
         run: |
