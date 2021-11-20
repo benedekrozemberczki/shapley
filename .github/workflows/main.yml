@@ -4,9 +4,9 @@ name: CI
 on:
 
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
   workflow_dispatch:
 
@@ -29,7 +29,6 @@ jobs:
          conda install -y scipy
          pip install codecov
          pip install pytest
-         pip install pytest-cov
          python setup.py install
       - name: Install main package
         run: |
