@@ -46,7 +46,7 @@ If you find *Shapley* useful in your research please consider adding the followi
 }
 ```
 
-----------------------------------------------------------------------------------
+--------------------------------------------------------------
 
 **A simple example**
 
