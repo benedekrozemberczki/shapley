@@ -2,13 +2,13 @@
 
 
 import numpy as np
-from abc import ABC, abstractmethod
+from abc import  ABCMeta, abstractmethod
 
-class SolutionConcept(ABC):
+class SolutionConcept(ABCMeta):
     """Solution Concept base class with constructor and public methods."""
 
     @abstractmethod
-    def get_solution(self) -> np.ndarray:
+    def __get_solution(self) -> np.ndarray:
         r"""Returning the solution.
 
         Return Types:
@@ -17,7 +17,7 @@ class SolutionConcept(ABC):
         pass
 
     @abstractmethod
-    def _solve_game(self, W: np.ndarray, q: float):
+    def __solve_game(self, W: np.ndarray, q: float):
         r"""Solving the weigted voting game(s).
 
         Args:
@@ -27,7 +27,7 @@ class SolutionConcept(ABC):
         pass
 
     @abstractmethod
-    def _setup(self, W: np.ndarray):
+    def __setup(self, W: np.ndarray):
         """Creating an empty Shapley value matrix and a player pool."""
         pass
 

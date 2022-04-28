@@ -11,7 +11,7 @@ class ExactEnumeration(SolutionConcept):
     `"A Value for N-Person Games." <https://www.rand.org/pubs/papers/P0295.html>`_
     """
 
-    def _setup(self, W: np.ndarray):
+    def __setup(self, W: np.ndarray):
         """Creating an empty Shapley value matrix and a player pool."""
         self._Phi = np.zeros(W.shape)
         self._indices = [i for i in range(W.shape[1])]
@@ -28,7 +28,7 @@ class ExactEnumeration(SolutionConcept):
             self._Phi[np.arange(W.shape[0]), pivotal] += 1.0
         self._Phi = self._Phi / self.permutations
 
-    def solve_game(self, W: np.ndarray, q: float):
+    def __solve_game(self, W: np.ndarray, q: float):
         r"""Solving the weigted voting game(s).
 
         Args:
@@ -42,7 +42,7 @@ class ExactEnumeration(SolutionConcept):
         self._set_average_shapley()
         self._set_shapley_entropy()
 
-    def get_solution(self) -> np.ndarray:
+    def __get_solution(self) -> np.ndarray:
         r"""Returning the solution.
 
         Return Types:

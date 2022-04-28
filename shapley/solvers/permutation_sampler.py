@@ -20,7 +20,7 @@ class PermutationSampler(SolutionConcept):
     def __init__(self, permutations: int = 1000):
         self.permutations = permutations
 
-    def _setup(self, W: np.ndarray):
+    def __setup(self, W: np.ndarray):
         """Creating an empty Shapley value matrix and a player pool."""
         self._Phi = np.zeros(W.shape)
         self._indices = [i for i in range(W.shape[1])]
@@ -35,7 +35,7 @@ class PermutationSampler(SolutionConcept):
             self._Phi[np.arange(W.shape[0]), pivotal] += 1.0
         self._Phi = self._Phi / self.permutations
 
-    def solve_game(self, W: np.ndarray, q: float):
+    def __solve_game(self, W: np.ndarray, q: float):
         r"""Solving the weigted voting game(s).
 
         Args:
@@ -43,13 +43,13 @@ class PermutationSampler(SolutionConcept):
             q (float): Quota in the games.
         """
         self._check_quota(q)
-        self._setup(W)
+        self.__setup(W)
         self._run_permutations(W, q)
         self._run_sanity_check(W, self._Phi)
         self._set_average_shapley()
         self._set_shapley_entropy()
 
-    def get_solution(self) -> np.ndarray:
+    def __get_solution(self) -> np.ndarray:
         r"""Returning the solution.
 
         Return Types:

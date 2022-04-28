@@ -12,7 +12,7 @@ class MultilinearExtension(SolutionConcept):
     `"Multilinear Extensions of Games."  <https://www.jstor.org/stable/2661445#metadata_info_tab_contents>`_
     """
 
-    def _setup(self, W: np.ndarray):
+    def __setup(self, W: np.ndarray):
         """Creating an empty Shapley value matrix."""
         self._Phi = np.zeros(W.shape)
 
@@ -27,7 +27,7 @@ class MultilinearExtension(SolutionConcept):
         self._Phi = norm.cdf(upper, 0, 1) - norm.cdf(lower, 0, 1)
         self._Phi = self._Phi / np.sum(self._Phi, axis=1).reshape(-1, 1)
 
-    def solve_game(self, W: np.ndarray, q: float):
+    def __solve_game(self, W: np.ndarray, q: float):
         r"""Solving the weigted voting game(s).
 
         Args:
@@ -35,13 +35,13 @@ class MultilinearExtension(SolutionConcept):
             q (float): Quota in the games.
         """
         self._check_quota(q)
-        self._setup(W)
+        self.__setup(W)
         self._approximate(W, q)
         self._run_sanity_check(W, self._Phi)
         self._set_average_shapley()
         self._set_shapley_entropy()
 
-    def get_solution(self) -> np.ndarray:
+    def __get_solution(self) -> np.ndarray:
         r"""Returning the solution.
 
         Return Types:
