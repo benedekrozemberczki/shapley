@@ -1,13 +1,22 @@
 """Solution Concept base class."""
 
+
 import numpy as np
+from abc import ABC, abstractmethod
 
-
-class SolutionConcept(object):
+class SolutionConcept(ABC):
     """Solution Concept base class with constructor and public methods."""
 
-    def __init__(self):
-        """Creating a Solution Concept."""
+    @abstractmethod
+    def get_solution(self) -> np.ndarray:
+        pass
+
+    @abstractmethod
+    def _solve_game(self, W: np.ndarray, q: float):
+        pass
+
+    @abstractmethod
+    def _setup(self, W: np.ndarray):
         pass
 
     def _check_quota(self, q: float):
