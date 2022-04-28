@@ -45,7 +45,7 @@ class ExpectedMarginalContributions(SolutionConcept):
     def __init__(self, epsilon: float = 10 ** -8):
         self.epsilon = epsilon
 
-    def __setup(self, W: np.ndarray):
+    def setup(self, W: np.ndarray):
         """Creating an empty Shapley value matrix."""
         self._Phi = np.zeros(W.shape)
 
@@ -65,7 +65,7 @@ class ExpectedMarginalContributions(SolutionConcept):
 
         self._Phi = self._Phi / np.sum(self._Phi, axis=1).reshape(-1, 1)
 
-    def __solve_game(self, W: np.ndarray, q: float):
+    def solve_game(self, W: np.ndarray, q: float):
         r"""Solving the weigted voting game(s).
 
         Args:
@@ -73,13 +73,13 @@ class ExpectedMarginalContributions(SolutionConcept):
             q (float): Quota in the games.
         """
         self._check_quota(q)
-        self.__setup(W)
+        self.setup(W)
         self._approximate(W, q)
         self._run_sanity_check(W, self._Phi)
         self._set_average_shapley()
         self._set_shapley_entropy()
 
-    def __get_solution(self) -> np.ndarray:
+    def get_solution(self) -> np.ndarray:
         r"""Returning the solution.
 
         Return Types:
