@@ -9,14 +9,26 @@ class SolutionConcept(ABC):
 
     @abstractmethod
     def get_solution(self) -> np.ndarray:
+        r"""Returning the solution.
+
+        Return Types:
+            Phi (Numpy array): Approximate Shapley matrix of players in the game(s) with size :math:`n \times m`.
+        """
         pass
 
     @abstractmethod
     def _solve_game(self, W: np.ndarray, q: float):
+        r"""Solving the weigted voting game(s).
+
+        Args:
+            W (Numpy array): An :math:`n \times m` matrix of voting weights for the :math:`n` games with :math:`m` players.
+            q (float): Quota in the games.
+        """
         pass
 
     @abstractmethod
     def _setup(self, W: np.ndarray):
+        """Creating an empty Shapley value matrix and a player pool."""
         pass
 
     def _check_quota(self, q: float):
