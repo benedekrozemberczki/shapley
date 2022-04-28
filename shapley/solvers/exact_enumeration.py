@@ -11,7 +11,7 @@ class ExactEnumeration(SolutionConcept):
     `"A Value for N-Person Games." <https://www.rand.org/pubs/papers/P0295.html>`_
     """
 
-    def _setup(self, W: np.ndarray):
+    def setup(self, W: np.ndarray):
         """Creating an empty Shapley value matrix and a player pool."""
         self._Phi = np.zeros(W.shape)
         self._indices = [i for i in range(W.shape[1])]
@@ -36,7 +36,7 @@ class ExactEnumeration(SolutionConcept):
             q (float): Quota in the games.
         """
         self._check_quota(q)
-        self._setup(W)
+        self.setup(W)
         self._run_permutations(W, q)
         self._run_sanity_check(W, self._Phi)
         self._set_average_shapley()

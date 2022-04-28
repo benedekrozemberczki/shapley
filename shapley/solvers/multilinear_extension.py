@@ -12,7 +12,7 @@ class MultilinearExtension(SolutionConcept):
     `"Multilinear Extensions of Games."  <https://www.jstor.org/stable/2661445#metadata_info_tab_contents>`_
     """
 
-    def _setup(self, W: np.ndarray):
+    def setup(self, W: np.ndarray):
         """Creating an empty Shapley value matrix."""
         self._Phi = np.zeros(W.shape)
 
@@ -35,7 +35,7 @@ class MultilinearExtension(SolutionConcept):
             q (float): Quota in the games.
         """
         self._check_quota(q)
-        self._setup(W)
+        self.setup(W)
         self._approximate(W, q)
         self._run_sanity_check(W, self._Phi)
         self._set_average_shapley()

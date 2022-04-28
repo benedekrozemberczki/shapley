@@ -18,7 +18,7 @@ def create_integrand_vectors(player_count, q, w):
     :return b_s: Vector of upper integrand limits.
     """
     a_s = (q - w) / np.linspace(1, player_count - 1, player_count - 1)
-    b_s = (q - 10 ** -20) / np.linspace(1, player_count - 1, player_count - 1)
+    b_s = (q - 10**-20) / np.linspace(1, player_count - 1, player_count - 1)
     return a_s, b_s
 
 
@@ -42,10 +42,10 @@ class ExpectedMarginalContributions(SolutionConcept):
      <https://www.sciencedirect.com/science/article/pii/S0004370208000696>`_
     """
 
-    def __init__(self, epsilon: float = 10 ** -8):
+    def __init__(self, epsilon: float = 10**-8):
         self.epsilon = epsilon
 
-    def _setup(self, W: np.ndarray):
+    def setup(self, W: np.ndarray):
         """Creating an empty Shapley value matrix."""
         self._Phi = np.zeros(W.shape)
 
@@ -73,7 +73,7 @@ class ExpectedMarginalContributions(SolutionConcept):
             q (float): Quota in the games.
         """
         self._check_quota(q)
-        self._setup(W)
+        self.setup(W)
         self._approximate(W, q)
         self._run_sanity_check(W, self._Phi)
         self._set_average_shapley()
