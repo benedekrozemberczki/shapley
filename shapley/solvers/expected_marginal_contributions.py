@@ -18,7 +18,7 @@ def create_integrand_vectors(player_count, q, w):
     :return b_s: Vector of upper integrand limits.
     """
     a_s = (q - w) / np.linspace(1, player_count - 1, player_count - 1)
-    b_s = (q - 10 ** -20) / np.linspace(1, player_count - 1, player_count - 1)
+    b_s = (q - 10**-20) / np.linspace(1, player_count - 1, player_count - 1)
     return a_s, b_s
 
 
@@ -42,7 +42,7 @@ class ExpectedMarginalContributions(SolutionConcept):
      <https://www.sciencedirect.com/science/article/pii/S0004370208000696>`_
     """
 
-    def __init__(self, epsilon: float = 10 ** -8):
+    def __init__(self, epsilon: float = 10**-8):
         self.epsilon = epsilon
 
     def setup(self, W: np.ndarray):

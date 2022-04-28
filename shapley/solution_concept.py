@@ -2,7 +2,8 @@
 
 
 import numpy as np
-from abc import  ABCMeta, abstractmethod
+from abc import ABCMeta, abstractmethod
+
 
 class SolutionConcept(metaclass=ABCMeta):
     """Solution Concept base class with constructor and public methods."""
