@@ -25,7 +25,7 @@ Overview
 =======================
 --------------------------------------------------------------------------------
 
-We shortly overview the fundamental concepts and features of Shapley through simple examples. These are the following:
+We provide a brief overview pf the fundamental concepts and features of Shapley through the following simple examples:
 
 .. contents::
     :local:
