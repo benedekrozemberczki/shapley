@@ -33,7 +33,6 @@ The library consists of various methods to compute (approximate) the Shapley val
 
 **Citing**
 
-
 If you find *Shapley* useful in your research please consider adding the following citation:
 
 ```bibtex
